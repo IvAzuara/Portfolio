@@ -1,25 +1,50 @@
-<div class="sticky flex justify-center mt-4">
-	<nav class="bg-violet-900/40 shadow shadow-blue-800/40 rounded-sm w-auto">
-		<div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
-			<!-- Logo -->
-			<div class="flex items-center justify-start">
-				<!-- Heroicon - Chip Outline -->
-				<ion-icon class="text-2xl text-indigo-500" name="beer"></ion-icon>
+<div class="fixed flex justify-center items-center top-4 left-1/2 transform -translate-x-1/2 z-100">
+	<nav class="bg-feldgrau shadow w-152 pt-1">
+		<div class="h-18 mx-auto px-4 container flex items-center justify-between flex-wrap">
+			<div class="flex flex-col items-center group w-[45px]">
+				<ion-icon class="text-4xl text-ashgreen group-hover:text-feldgrau transition-all" name="beer"></ion-icon>
+				<div class="h-[2px] w-full mt-[3px] bg-ashgreen flex items-center transition-all
+					group-hover:h-[45px] group-hover:-mt-[40px]">
+				</div>
 			</div>
-			<div class="text-fuchsia-200 order-3 w-full md:w-auto md:order-2">
-				<ul class="flex font-semibold justify-between">
-					<!-- Active Link = text-indigo-500
-					Inactive Link = hover:text-indigo-500 -->
-					<li class="md:px-4 md:py-2 "><a href="#">Dashboard</a></li>
-					<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Search</a></li>
-					<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Explore</a></li>
-					<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">About</a></li>
-					<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Contact</a></li>
+			<div class="flex items-center text-latte">
+				<ul class="flex font-black justify-center gap-x-6 font-amatic text-2xl">
+					<div class="flex-col items-center group">
+						<li class="group-hover:text-feldgrau transition-all"><a href="#">Inicio</a></li>
+						<div class="h-[2px] w-[calc(100%+8px)] bg-latte flex items-center transition-all
+							group-hover:h-[36px] group-hover:-mt-[34px] -mx-[4px]">
+						</div>
+					</div>
+					<div class="flex-col items-center group">
+						<li class="group-hover:text-feldgrau transition-all"><a href="#">Acerca de mi</a></li>
+						<div class="h-[2px] w-[calc(100%+8px)] bg-latte flex items-center transition-all
+							group-hover:h-[36px] group-hover:-mt-[34px] -mx-[4px]">
+						</div>
+					</div>
+					<div class="flex-col items-center group">
+						<li class="group-hover:text-feldgrau transition-all"><a href="#">Proyectos</a></li>
+						<div class="h-[2px] w-[calc(100%+8px)] bg-latte flex items-center transition-all
+							group-hover:h-[36px] group-hover:-mt-[34px] -mx-[4px]">
+						</div>
+					</div>
 				</ul>
 			</div>
-			<div class="order-2 md:order-3">
-				<ion-icon class="text-2xl text-indigo-500" name="sunny"></ion-icon>
+			<div class="flex justify-between gap-4 text-ashgreen">
+				<div class="flex flex-col items-center group w-[45px]">
+					<ion-icon class="text-4xl text-ashgreen group-hover:text-feldgrau transition-all" name="language"></ion-icon>
+					<div class="h-[2px] w-full mt-[3px] bg-ashgreen flex items-center transition-all
+						group-hover:h-[45px] group-hover:-mt-[40px]">
+					</div>
+				</div>
+				
+				<div class="flex flex-col items-center group w-[45px]">
+					<ion-icon class="text-4xl text-ashgreen group-hover:text-feldgrau transition-all" name="sunny"></ion-icon>
+					<div class="h-[2px] w-full mt-[3px] bg-ashgreen flex items-center transition-all
+						group-hover:h-[45px] group-hover:-mt-[40px]">
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
 </div>
+<slot />
