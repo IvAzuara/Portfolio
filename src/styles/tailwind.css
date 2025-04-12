@@ -1,1 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --color-feldgrau: #3E4E3C;
+    --color-ashgreen: #A7B7AD;
+    --color-rawbrown: #856651;
+    --color-tan: #D9B99B;
+    --color-latte: #FDF6E3;
+    --color-indired: #C76F63;
+    --font-amatic: 'Amatic SC', sans-serif;
+    --font-quattrocento: "Quattrocento Sans", sans-serif;
+  }

@@ -1,210 +1,117 @@
----
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
----
-
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
-			<a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
-			>
-			<h1>
-				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
-			</h1>
-			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
-				<a href="https://astro.build/chat"
-					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
-						><path
-							fill="currentColor"
-							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-						></path></svg
-					>
-				</a>
-			</section>
-		</section>
-	</main>
-
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2>What's New in Astro 5.0?</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
-		</p>
-	</a>
+<div class="flex items-center justify-center w-full mt-32 gap-4">
+	<div class="flex w-80 h-80 bg-tan justify-center items-center uppercase text-latte">
+		foto
+	</div>
+	<div class="flex flex-col w-120 text-feldgrau">
+		<h1 class="text-8xl font-amatic -indent-33 ml-33">🍁Hola, soy Ivan Azuara</h1>
+		<span class="font-quattrocento mt-4 text-xl font-normal">Desarrollador web con alma de artista, amante del otoño, las historias visuales y las interfaces cálidas. 
+			Me gusta crear experiencias digitales que se sientan como una caminata tranquila por el bosque: simples, bellas y significativas.
+		</span>
+	</div>
 </div>
 
-<style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
+<div class="mt-8 h-full py-12 bg-[url(../assets/Background-Welcome.jpg)] bg-fixed bg-cover text-lg">
 
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
+	<h2>Min Habilidades</h2>
+	<div class="flex flex-wrap justify-center items-center gap-12">
+		<div class="bg-white/90 h-fit w-160 p-4">
+			<div class="flex items-center gap-4">
+				<div class="bg-rawbrown/20 rounded-full p-4 flex items-center justify-start w-fit">
+					<ion-icon class="text-6xl text-rawbrown" name="construct"></ion-icon>
+				</div>
+				<span class="font-amatic text-rawbrown text-6xl font-black">Backend</span>
+			</div>
+			<div class="w-full h-[2px] bg-rawbrown/40 my-2"></div>
+			<p class="font-quattrocento text-rawbrown font-medium text-wrap">El backend es donde me siento más cómodo y creativo. Me especializo en el desarrollo de APIs, 
+				lógica de negocio, gestión de datos y seguridad. Me encanta estructurar arquitecturas limpias y eficientes, y trabajar con bases de datos y sistemas que escalan bien.
+			</p>
+			<br>
+			<p class="font-quattrocento text-rawbrown font-medium mb-2">Tengo experiencia construyendo soluciones backend con:</p>
+			<br>
+			<ul class="list-disc list-inside pl-4 space-y-2 ">
+				<li class="font-quattrocento text-rawbrown font-semibold flex items-center gap-2">
+					<ion-icon class="text-feldgrau text-xl" name="checkmark-circle"></ion-icon>
+					ASP.NET Core / Blazor Server / C#
+				</li>
+				<li class="font-quattrocento text-rawbrown font-semibold flex items-center gap-2">
+					<ion-icon class="text-feldgrau text-xl" name="checkmark-circle"></ion-icon>
+					Laravel / PHP
+				</li>
+				<li class="font-quattrocento text-rawbrown font-semibold flex items-center gap-2">
+					<ion-icon class="text-feldgrau text-xl" name="checkmark-circle"></ion-icon>
+					Flask / Python
+				</li>
+				<li class="font-quattrocento text-rawbrown font-semibold flex items-center gap-2">
+					<ion-icon class="text-feldgrau text-xl" name="checkmark-circle"></ion-icon>
+					Entity Framework, <span class="font-medium">SQL Server</span>
+				</li>
+			</ul>
+		</div>
 
-	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	}
+		<div class="bg-white/90 h-fit w-160 p-4">
+			<div class="flex items-center gap-4">
+				<div class="bg-feldgrau/20 rounded-full p-4 flex items-center justify-start w-fit">
+					<ion-icon class="text-6xl text-feldgrau" name="color-palette"></ion-icon>
+				</div>
+				<span class="font-amatic text-feldgrau text-6xl font-black">Frontend</span>
+			</div>
+			<div class="w-full h-[2px] bg-feldgrau/40 my-2"></div>
+			<p class="font-quattrocento text-feldgrau">Aunque no es mi principal enfoque, también puedo aportar en el desarrollo frontend. 
+				Me interesa construir interfaces limpias, accesibles y visualmente agradables, especialmente cuando se combinan con buenas prácticas de diseño.
+			</p>
+			<br>
+			<p class="font-quattrocento text-feldgrau font-medium mb-2">He trabajado con:</p>
+			<br>
+			<ul class="list-disc list-inside pl-4 space-y-2 ">
+				<li class="font-quattrocento text-feldgrau font-bold flex items-center gap-2">
+					<ion-icon class="text-indired text-xl" name="checkmark-circle"></ion-icon>
+					Blazor (WebAssembly / Server)
+				</li>
+				<li class="font-quattrocento text-feldgrau font-bold flex items-center gap-2">
+					<ion-icon class="text-indired text-xl" name="checkmark-circle"></ion-icon>
+					Astro
+				</li>
+				<li class="font-quattrocento text-feldgrau font-bold flex items-center gap-2">
+					<ion-icon class="text-indired text-xl" name="checkmark-circle"></ion-icon>
+					JavaScript / TypeScript
+				</li>
+				<li class="font-quattrocento text-feldgrau font-medium flex items-center gap-2">
+					<ion-icon class="text-indired text-xl" name="checkmark-circle"></ion-icon>
+					Componentes responsivos y accesibles
+				</li>
+			</ul>
+		</div>
 
-	#hero {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
+		<div class="bg-white/90 h-fit w-160 p-4">
+			<div class="flex items-center gap-4">
+				<div class="bg-indired/20 rounded-full p-4 flex items-center justify-start w-fit">
+					<ion-icon class="text-6xl text-indired" name="phone-portrait"></ion-icon>
+				</div>
+				<span class="font-amatic text-indired text-6xl font-black">Aplicaciones móviles</span>
+			</div>
+			<div class="w-full h-[2px] bg-indired/40 my-2"></div>
+			<p class="font-quattrocento text-indired text-lg font-medium">También he participado en la creación de aplicaciones móviles híbridas y nativas, 
+				contribuyendo tanto al diseño de la lógica como a la integración con servicios backend y APIs.
+			</p>
+			<br>
+			<p class="font-quattrocento text-indired font-medium mb-2">Herramientas con las que he trabajado:
 
-	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
-	}
+			</p>
+			<br>
+			<ul class="list-disc list-inside pl-4 space-y-2 ">
+				<li class="font-quattrocento text-indired font-bold flex items-center gap-2">
+					<ion-icon class="text-rawbrown text-xl" name="checkmark-circle"></ion-icon>
+					Blazor Hybrid
+				</li>
+				<li class="font-quattrocento text-indired font-bold flex items-center gap-2">
+					<ion-icon class="text-rawbrown text-xl" name="checkmark-circle"></ion-icon>
+					Kotlin (Android nativo)
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-	#links {
-		display: flex;
-		gap: 16px;
-	}
+<div>
 
-	#links a {
-		display: flex;
-		align-items: center;
-		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-
-	#links a:hover {
-		color: rgb(78, 80, 86);
-	}
-
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
-	}
-
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
-	}
-
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
-	}
-
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		margin: 0;
-	}
-
-	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
-	}
-
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-	}
-
-	code {
-		display: inline-block;
-		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
-	}
-
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
-	}
-
-	#news {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		max-width: 300px;
-		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
-	}
-
-	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
-	}
-
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
-		}
-	}
-
-	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		#hero {
-			display: block;
-			padding-top: 10%;
-		}
-
-		#links {
-			flex-wrap: wrap;
-		}
-
-		#links a.button {
-			padding: 14px 18px;
-		}
-
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
-		}
-
-		h1 {
-			line-height: 1.5;
-		}
-	}
-</style>
+</div>
