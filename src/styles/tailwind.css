@@ -11,3 +11,7 @@
     --font-amatic: 'Amatic SC', sans-serif;
     --font-quattrocento: "Quattrocento Sans", sans-serif;
   }
+
+  .rotated-mask {
+    transform: rotate(180deg);
+  }
