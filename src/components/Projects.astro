@@ -1,0 +1,316 @@
+---
+// Projects.astro
+---
+
+<section id="proyectos" class="scroll-mt-20 relative bg-paper dark:bg-ink border-b-[3px] border-ink dark:border-paper overflow-hidden py-20 px-6 md:px-16">
+
+  <!-- Halftone bg -->
+  <div class="CS_halftone absolute inset-0 pointer-events-none z-0"></div>
+
+  <!-- Section label -->
+  <div class="relative z-10 flex items-center gap-4 mb-10">
+    <span class="font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper opacity-40">04 /</span>
+    <h2 class="font-bangers text-[clamp(36px,5vw,56px)] leading-none tracking-wide text-ink dark:text-paper">
+      PRO<span class="CS_projects-title-highlight relative inline-block">YECTOS</span>
+    </h2>
+    <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20 dark:opacity-10"></div>
+  </div>
+
+  <!-- hint -->
+  <p class="relative z-10 font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-8 max-w-5xl mx-auto">
+    ✦ HOVER PARA VER DETALLES
+  </p>
+
+  <!-- ── CARDS GRID ── -->
+  <div class="relative z-10 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- ══ CARD 1 — Proyecto Empresa (CONFIDENCIAL) ══ -->
+    <div class="CS_flip-card h-[420px] cursor-pointer group">
+      <div class="CS_flip-inner">
+
+        <!-- FRENTE -->
+        <div class="CS_flip-front bg-ink border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col overflow-hidden">
+
+          <!-- Visual area -->
+          <div class="flex-1 relative bg-[#0f0f20] flex items-center justify-center overflow-hidden">
+
+            <!-- Redacted / classified aesthetic -->
+            <div class="CS_redacted-lines absolute inset-0 opacity-10"></div>
+
+            <!-- Classified stamp -->
+            <div class="relative z-10 flex flex-col items-center gap-3">
+              <div class="CS_classified-badge">
+                <svg viewBox="0 0 120 120" class="w-28 h-28">
+                  <circle cx="60" cy="60" r="55" fill="none" stroke="#e63946" stroke-width="4"/>
+                  <circle cx="60" cy="60" r="48" fill="none" stroke="#e63946" stroke-width="1.5"/>
+                  <text x="60" y="52" text-anchor="middle" font-family="Bangers" font-size="13"
+                        fill="#e63946" letter-spacing="3">PROYECTO</text>
+                  <text x="60" y="72" text-anchor="middle" font-family="Bangers" font-size="18"
+                        fill="#e63946" letter-spacing="2">PRIVADO</text>
+                  <line x1="15" y1="60" x2="105" y2="60" stroke="#e63946" stroke-width="2"/>
+                </svg>
+              </div>
+              <span class="font-bangers text-[11px] tracking-[3px] text-comic-red opacity-70">
+                NDA ACTIVO
+              </span>
+            </div>
+
+            <!-- Decorative corner brackets -->
+            <div class="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-comic-red opacity-50"></div>
+            <div class="absolute top-3 right-3 w-5 h-5 border-t-2 border-r-2 border-comic-red opacity-50"></div>
+            <div class="absolute bottom-3 left-3 w-5 h-5 border-b-2 border-l-2 border-comic-red opacity-50"></div>
+            <div class="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-comic-red opacity-50"></div>
+          </div>
+
+          <!-- Footer -->
+          <div class="p-4 bg-ink border-t-[3px] border-comic-red">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-comic-red mb-1">EMPRESA · 2024</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-paper">
+                  [REDACTED]
+                </div>
+              </div>
+              <div class="w-8 h-8 border-[2px] border-comic-red flex items-center justify-center shrink-0">
+                <span class="text-comic-red text-lg">🔒</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REVERSO -->
+        <div class="CS_flip-back bg-comic-red border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col p-6 gap-4">
+
+          <div class="font-bangers text-[11px] tracking-[3px] text-white opacity-60">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-white">
+            Sistema Interno<br>Empresarial
+          </h3>
+
+          <p class="font-quattrocento text-[13px] leading-relaxed text-white opacity-90 flex-1">
+            Aplicación de gestión interna desarrollada para una empresa. Incluye módulos de administración, reportes y automatización de procesos. Información detallada bajo NDA.
+          </p>
+
+          <!-- Tech chips -->
+          <div class="flex flex-wrap gap-1.5">
+            <span class="CS_tech-badge-back">.NET</span>
+            <span class="CS_tech-badge-back">C#</span>
+            <span class="CS_tech-badge-back">SQL Server</span>
+            <span class="CS_tech-badge-back">React</span>
+          </div>
+
+          <!-- Links -->
+          <div class="flex gap-3 items-center pt-1 border-t-[2px] border-white border-opacity-20">
+            <span class="font-bangers text-[12px] tracking-[2px] text-white opacity-50 flex items-center gap-1">
+              🔒 Repositorio privado
+            </span>
+          </div>
+
+          <div class="font-bangers text-[11px] tracking-[2px] text-white opacity-40">2024</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ CARD 2 — Pokédex .NET ══ -->
+    <div class="CS_flip-card h-[420px] cursor-pointer group">
+      <div class="CS_flip-inner">
+
+        <!-- FRENTE -->
+        <div class="CS_flip-front bg-paper dark:bg-[#1e1e38] border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col overflow-hidden">
+
+          <!-- Visual area -->
+          <div class="flex-1 relative bg-[#cc0000] flex items-center justify-center overflow-hidden">
+
+            <!-- Pokédex circles deco -->
+            <div class="absolute top-4 left-4 flex gap-2 items-center">
+              <div class="w-10 h-10 rounded-full bg-[#88ccff] border-[3px] border-ink shadow-[2px_2px_0_#1a1a2e]"></div>
+              <div class="w-4 h-4 rounded-full bg-comic-red border-[2px] border-ink"></div>
+              <div class="w-4 h-4 rounded-full bg-yellow border-[2px] border-ink"></div>
+              <div class="w-4 h-4 rounded-full bg-[#44cc44] border-[2px] border-ink"></div>
+            </div>
+
+            <!-- Pokéball SVG -->
+            <div class="relative z-10">
+              <svg viewBox="0 0 100 100" class="w-32 h-32 drop-shadow-lg">
+                <circle cx="50" cy="50" r="46" fill="white" stroke="#1a1a2e" stroke-width="4"/>
+                <path d="M4 50 Q4 4 50 4 Q96 4 96 50 Z" fill="#cc0000"/>
+                <line x1="4" y1="50" x2="96" y2="50" stroke="#1a1a2e" stroke-width="4"/>
+                <circle cx="50" cy="50" r="12" fill="white" stroke="#1a1a2e" stroke-width="4"/>
+                <circle cx="50" cy="50" r="6" fill="#1a1a2e"/>
+              </svg>
+            </div>
+
+            <!-- Scan lines -->
+            <div class="CS_scanlines absolute inset-0 pointer-events-none opacity-10"></div>
+
+            <!-- Bottom panel divider -->
+            <div class="absolute bottom-0 left-0 right-0 h-[3px] bg-ink"></div>
+          </div>
+
+          <!-- Footer -->
+          <div class="p-4 bg-paper dark:bg-[#1e1e38] border-t-[3px] border-ink">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-comic-blue dark:text-yellow mb-1">PERSONAL · 2024</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink dark:text-paper">
+                  Pokédex .NET
+                </div>
+              </div>
+              <div class="w-8 h-8 border-[2px] border-ink dark:border-paper flex items-center justify-center shrink-0
+                          bg-yellow shadow-[2px_2px_0_#1a1a2e]">
+                <span class="text-ink text-lg">🌐</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REVERSO -->
+        <div class="CS_flip-back bg-[#cc0000] border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col p-6 gap-4">
+
+          <div class="font-bangers text-[11px] tracking-[3px] text-white opacity-60">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-white">
+            Pokédex<br>con .NET
+          </h3>
+
+          <p class="font-quattrocento text-[13px] leading-relaxed text-white opacity-90 flex-1">
+            Pokédex completa construida usando .NET tanto para el frontend como para la lógica de consumo. Conecta con PokéAPI para obtener datos en tiempo real de todos los Pokémon.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5">
+            <span class="CS_tech-badge-back">.NET</span>
+            <span class="CS_tech-badge-back">C#</span>
+            <span class="CS_tech-badge-back">PokéAPI</span>
+            <span class="CS_tech-badge-back">Blazor</span>
+          </div>
+
+          <div class="flex gap-3 items-center pt-1 border-t-[2px] border-white border-opacity-20">
+            <a href="https://github.com/tu-usuario/pokedex"
+               target="_blank"
+               class="font-bangers text-[13px] tracking-[2px] text-white
+                      border-[2px] border-white px-3 py-1
+                      hover:bg-white hover:text-[#cc0000] transition-colors duration-100
+                      flex items-center gap-1.5">
+              <i class="devicon-github-original text-base"></i>
+              GitHub →
+            </a>
+          </div>
+
+          <div class="font-bangers text-[11px] tracking-[2px] text-white opacity-40">2024</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ CARD 3 — Portfolio ══ -->
+    <div class="CS_flip-card h-[420px] cursor-pointer group">
+      <div class="CS_flip-inner">
+
+        <!-- FRENTE -->
+        <div class="CS_flip-front bg-yellow border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col overflow-hidden">
+
+          <!-- Visual area -->
+          <div class="flex-1 relative bg-ink flex items-center justify-center overflow-hidden">
+
+            <!-- Speed lines -->
+            <div class="CS_speed-lines absolute inset-0 opacity-10 rounded-none"></div>
+
+            <!-- Comic panel grid deco -->
+            <div class="relative z-10 grid grid-cols-2 grid-rows-2 gap-[2px] w-36 h-28 opacity-80">
+              <div class="bg-yellow border-[2px] border-paper"></div>
+              <div class="bg-comic-red border-[2px] border-paper"></div>
+              <div class="bg-comic-blue border-[2px] border-paper col-span-2"></div>
+            </div>
+
+            <!-- POW badge -->
+            <div class="absolute bottom-4 right-4 z-10">
+              <svg viewBox="0 0 80 80" class="w-16 h-16">
+                <polygon points="40,2 50,28 76,28 55,44 63,70 40,54 17,70 25,44 4,28 30,28"
+                  fill="#ffd60a" stroke="#fffbf0" stroke-width="2.5"/>
+              </svg>
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[55%]
+                           font-bangers text-[11px] text-ink tracking-wide -rotate-12 whitespace-nowrap">
+                ESTE!
+              </span>
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 h-[3px] bg-ink"></div>
+          </div>
+
+          <!-- Footer -->
+          <div class="p-4 bg-yellow border-t-[3px] border-ink">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-ink opacity-50 mb-1">PORTFOLIO · 2024</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink">
+                  Este Portfolio
+                </div>
+              </div>
+              <div class="w-8 h-8 border-[2px] border-ink flex items-center justify-center shrink-0
+                          bg-paper shadow-[2px_2px_0_#1a1a2e]">
+                <span class="text-ink text-lg">⭐</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REVERSO -->
+        <div class="CS_flip-back bg-ink border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col p-6 gap-4">
+
+          <div class="font-bangers text-[11px] tracking-[3px] text-yellow opacity-60">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-paper">
+            Portfolio<br>Personal
+          </h3>
+
+          <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-90 flex-1">
+            Este mismo portfolio que estás viendo. Diseñado con estética de cómic moderno, construido con Astro y Tailwind v4. Código público, puedes ver cómo está hecho.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5">
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">Astro</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">Tailwind v4</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">TypeScript</span>
+          </div>
+
+          <div class="flex gap-3 items-center pt-1 border-t-[2px] border-paper border-opacity-20">
+            <a href="https://github.com/tu-usuario/portfolio"
+               target="_blank"
+               class="font-bangers text-[13px] tracking-[2px] text-yellow
+                      border-[2px] border-yellow px-3 py-1
+                      hover:bg-yellow hover:text-ink transition-colors duration-100
+                      flex items-center gap-1.5">
+              <i class="devicon-github-original text-base"></i>
+              GitHub →
+            </a>
+          </div>
+
+          <div class="font-bangers text-[11px] tracking-[2px] text-paper opacity-40">2024</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- end cards -->
+
+</section>
+
+<script>
+  // Tap to flip en móvil
+  document.querySelectorAll('.CS_flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('CS_flipped');
+    });
+  });
+</script>
