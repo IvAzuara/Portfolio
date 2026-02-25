@@ -25,3 +25,7 @@
     --shadow-comic: 4px 4px 0px var(--color-ink);
     --shadow-comic-lg: 6px 6px 0px var(--color-ink);
 }
+
+html {
+  scroll-behavior: smooth;
+}

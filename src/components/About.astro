@@ -1,0 +1,243 @@
+---
+// About.astro
+---
+
+<section id="acerca" class="scroll-mt-20 CS_about relative bg-paper dark:bg-ink border-b-[3px] border-ink dark:border-paper overflow-hidden py-20 px-6 md:px-16">
+
+  <!-- Halftone bg -->
+  <div class="CS_halftone absolute inset-0 pointer-events-none z-0"></div>
+
+  <!-- Section label -->
+  <div class="relative z-10 flex items-center gap-4 mb-10">
+    <span class="font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper opacity-40">02 /</span>
+    <h2 class="font-bangers text-[clamp(36px,5vw,56px)] leading-none tracking-wide text-ink dark:text-paper">
+      ACERCA DE&nbsp;<span class="CS_about-title-highlight relative inline-block">MÍ</span>
+    </h2>
+    <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20 dark:opacity-10"></div>
+  </div>
+
+  <!-- ───── COMIC GRID ───── -->
+  <div class="CS_comic-grid relative z-10 grid gap-[3px] bg-ink dark:bg-paper
+              grid-cols-[1fr_1fr_1fr] grid-rows-[300px_220px]
+              border-[3px] border-ink dark:border-paper
+              shadow-[8px_8px_0_#1a1a2e] dark:shadow-[8px_8px_0_#fffbf0]
+              max-w-5xl mx-auto">
+
+    <!-- ── PANEL A — Foto (col 1-2, row 1) ── -->
+    <div class="CS_panel relative col-span-2 row-span-1 bg-yellow dark:bg-[#2a2a4a] overflow-hidden group">
+
+      <div class="CS_action-lines absolute inset-[-20px] pointer-events-none opacity-[0.07]"></div>
+
+      <span class="absolute font-bangers text-[160px] text-ink dark:text-paper opacity-[0.05]
+                   tracking-[-6px] bottom-[-20px] left-4 pointer-events-none select-none leading-none">
+        ABOUT
+      </span>
+
+      <div class="absolute left-10 top-1/2 -translate-y-1/2">
+        <div class="CS_avatar-sm relative w-[180px] h-[220px]
+                    border-[3px] border-ink dark:border-paper
+                    bg-paper dark:bg-ink
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    rotate-[-2deg] overflow-hidden">
+          <div class="CS_avatar-placeholder-sm w-full h-full"></div>
+          <div class="CS_figure-head-sm"></div>
+          <div class="CS_figure-body-sm"></div>
+        </div>
+      </div>
+
+      <div class="absolute right-8 top-8 font-bangers text-ink dark:text-paper">
+        <div class="text-[13px] tracking-[3px] opacity-50 mb-1">PERSONAJE</div>
+        <div class="text-[38px] leading-none tracking-wide">Mario Iván Azuara Del Angel</div>
+        <div class="text-[16px] tracking-[2px] mt-1 text-comic-red">Full Stack Developer</div>
+      </div>
+
+      <div class="absolute right-8 bottom-8 flex gap-2 flex-wrap justify-end max-w-[260px]">
+        <span class="bg-paper dark:bg-ink border-[2px] border-ink dark:border-paper
+                     font-bangers text-[12px] tracking-[1px] text-ink dark:text-paper
+                     px-2 py-0.5 shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+          ⚡ Creativo
+        </span>
+        <span class="bg-paper dark:bg-ink border-[2px] border-ink dark:border-paper
+                     font-bangers text-[12px] tracking-[1px] text-ink dark:text-paper
+                     px-2 py-0.5 shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+          🎯 Detallista
+        </span>
+        <span class="bg-paper dark:bg-ink border-[2px] border-ink dark:border-paper
+                     font-bangers text-[12px] tracking-[1px] text-ink dark:text-paper
+                     px-2 py-0.5 shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+          🔥 Apasionado
+        </span>
+      </div>
+
+      <span class="CS_panel-label absolute top-2 left-3 font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-30">A</span>
+    </div>
+
+    <!-- ── PANEL B — Bio text (col 3, row 1) ── -->
+    <div class="CS_panel relative col-span-1 row-span-1 bg-paper dark:bg-[#1e1e38] overflow-hidden flex flex-col justify-between p-6">
+
+      <div class="absolute top-3 right-4 flex gap-1">
+        <div class="w-1.5 h-1.5 rounded-full bg-ink dark:bg-paper opacity-30"></div>
+        <div class="w-2 h-2 rounded-full bg-ink dark:bg-paper opacity-40"></div>
+        <div class="w-2.5 h-2.5 rounded-full bg-ink dark:bg-paper opacity-50"></div>
+      </div>
+
+      <div>
+        <div class="font-bangers text-[13px] tracking-[3px] text-comic-red mb-3">// BIO</div>
+        <p class="font-quattrocento text-[14px] leading-relaxed text-ink dark:text-paper">
+          Cuéntate aquí. Un párrafo directo, con personalidad, que explique quién eres, qué te mueve y por qué haces lo que haces.
+        </p>
+        <p class="font-quattrocento text-[14px] leading-relaxed text-ink dark:text-paper mt-3 opacity-70">
+          Segunda idea. Puedes hablar de tus intereses, tu forma de trabajar o lo que te diferencia.
+        </p>
+      </div>
+
+      <div class="self-end rotate-[-8deg] border-[3px] border-comic-red text-comic-red
+                  font-bangers text-[11px] tracking-[2px] px-2 py-1 opacity-60">
+        OPEN TO WORK
+      </div>
+
+      <span class="CS_panel-label absolute top-2 left-3 font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-30">B</span>
+    </div>
+
+    <!-- ── PANEL C — Stack (col 1, row 2) ── -->
+    <div class="CS_panel relative col-span-1 row-span-1 bg-comic-blue overflow-hidden p-3 flex flex-col">
+
+      <!-- Header: título + pills .NET y React en la misma línea -->
+      <div class="flex items-center justify-between mb-2 shrink-0">
+        <div class="font-bangers text-[14px] tracking-[3px] text-paper">STACK</div>
+        <div class="flex gap-1.5">
+          <div class="flex items-center gap-1 bg-[#512bd4] border-[2px] border-ink px-2 py-0.5
+                      shadow-[2px_2px_0_#1a1a2e] cursor-default
+                      transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+            <i class="devicon-dotnetcore-plain text-sm text-white"></i>
+            <span class="font-bangers text-[10px] tracking-wide text-white leading-none">.NET</span>
+          </div>
+          <div class="flex items-center gap-1 bg-[#20232a] border-[2px] border-ink px-2 py-0.5
+                      shadow-[2px_2px_0_#1a1a2e] cursor-default
+                      transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+            <i class="devicon-react-original text-sm text-[#61dafb]"></i>
+            <span class="font-bangers text-[10px] tracking-wide text-[#61dafb] leading-none">React</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid 4x2 que ocupa el espacio restante exacto con grid-rows-2 -->
+      <div class="grid grid-cols-4 grid-rows-2 gap-1 flex-1 min-h-0">
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+            <i class="devicon-html5-plain colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">HTML</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+          <i class="devicon-css3-plain colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">CSS</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+          <i class="devicon-typescript-plain colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">TS</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+          <i class="devicon-javascript-plain colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">JS</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+          <i class="devicon-csharp-plain colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">C#</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+            <i class="devicon-nodejs-plain-wordmark colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">Node</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+            <i class="devicon-azuresqldatabase-plain colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">SQL</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-0.5
+                    bg-paper dark:bg-ink border-[2px] border-ink
+                    shadow-[2px_2px_0_#1a1a2e] cursor-default
+                    transition-all duration-100 hover:-translate-y-px hover:shadow-[3px_3px_0_#1a1a2e]">
+          <i class="devicon-git-plain colored text-2xl"></i>
+          <span class="font-bangers text-xl tracking-wide text-ink dark:text-paper leading-none">Git</span>
+        </div>
+
+      </div>
+
+      <span class="CS_panel-label absolute top-2 left-3 font-bangers text-[11px] tracking-[2px] text-paper opacity-30">C</span>
+    </div>
+
+    <!-- ── PANEL D — Kaboom splash (col 2, row 2) ── -->
+    <div class="CS_panel relative col-span-1 row-span-1 bg-yellow dark:bg-[#2a2a4a] overflow-hidden
+                flex items-center justify-center">
+
+      <svg class="absolute inset-0 w-full h-full opacity-15" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+        <polygon points="100,5 115,70 175,40 130,90 185,110 120,115 130,175 95,130 55,180 75,118 15,120 70,90 20,55 82,72"
+          fill="none" stroke="#1a1a2e" stroke-width="1.5"/>
+      </svg>
+
+      <div class="relative text-center z-10">
+        <div class="font-bangers text-[clamp(48px,6vw,72px)] leading-none tracking-wide
+                    text-ink dark:text-paper CS_kaboom-text">
+          100%<br>
+          <span class="text-[28px] tracking-[3px]">DEDICACIÓN</span>
+        </div>
+      </div>
+
+      <span class="CS_panel-label absolute top-2 left-3 font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-30">D</span>
+    </div>
+
+    <!-- ── PANEL E — CTA panel (col 3, row 2) ── -->
+    <div class="CS_panel relative col-span-1 row-span-1 bg-ink dark:bg-comic-red overflow-hidden
+                flex flex-col items-center justify-center gap-4 p-6">
+
+      <div class="CS_halftone-white absolute inset-0 pointer-events-none opacity-[0.07]"></div>
+
+      <p class="font-bangers text-[18px] tracking-[2px] text-paper text-center leading-tight relative z-10">
+        ¿Quieres saber<br>más sobre mí?
+      </p>
+
+      <a href="#contacto"
+         class="relative z-10 font-bangers text-[17px] tracking-[2px] text-ink
+                bg-yellow border-[3px] border-paper px-5 py-2
+                shadow-[4px_4px_0_#fffbf0]
+                transition-all duration-100
+                hover:-translate-x-0.5 hover:-translate-y-0.5
+                hover:shadow-[6px_6px_0_#fffbf0]
+                active:translate-x-[2px] active:translate-y-[2px]
+                active:shadow-[1px_1px_0_#fffbf0]">
+        Hablemos →
+      </a>
+
+      <span class="CS_panel-label absolute top-2 left-3 font-bangers text-[11px] tracking-[2px] text-paper opacity-30">E</span>
+    </div>
+
+  </div>
+
+</section>

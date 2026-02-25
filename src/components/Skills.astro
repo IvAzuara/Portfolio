@@ -1,0 +1,311 @@
+---
+// Skills.astro
+---
+
+<section id="habilidades" class="scroll-mt-20 relative bg-paper dark:bg-ink border-b-[3px] border-ink dark:border-paper overflow-hidden py-20 px-6 md:px-16">
+
+  <!-- Halftone bg -->
+  <div class="CS_halftone absolute inset-0 pointer-events-none z-0"></div>
+
+  <!-- Section label -->
+  <div class="relative z-10 flex items-center gap-4 mb-10">
+    <span class="font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper opacity-40">03 /</span>
+    <h2 class="font-bangers text-[clamp(36px,5vw,56px)] leading-none tracking-wide text-ink dark:text-paper">
+      HABI<span class="CS_skills-title-highlight relative inline-block">LIDADES</span>
+    </h2>
+    <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20 dark:opacity-10"></div>
+  </div>
+
+  <!-- ── RPG CARD LAYOUT ── -->
+  <div class="relative z-10 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-[3px]
+              border-[3px] border-ink dark:border-paper
+              shadow-[8px_8px_0_#1a1a2e] dark:shadow-[8px_8px_0_#fffbf0]
+              bg-ink dark:bg-paper">
+
+    <!-- ══ PANEL FRONTEND ══ -->
+    <div class="CS_skills-panel bg-paper dark:bg-[#1e1e38] p-6 flex flex-col gap-4">
+      <div class="flex items-center gap-3 mb-1">
+        <div class="w-8 h-8 bg-comic-blue border-[2px] border-ink flex items-center justify-center
+                    shadow-[2px_2px_0_#1a1a2e]">
+          <i class="devicon-react-original text-[#61dafb] text-sm"></i>
+        </div>
+        <span class="font-bangers text-[18px] tracking-[3px] text-ink dark:text-paper">FRONTEND</span>
+        <div class="CS_zigzag flex-1 h-[2px] opacity-15"></div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">React</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 7</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-animate" style="--bar-w: 70%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">JavaScript</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 7</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-animate" style="--bar-w: 70%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">TypeScript</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 6</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-animate" style="--bar-w: 60%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">CSS / Tailwind</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 8</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-animate" style="--bar-w: 80%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ PANEL BACKEND ══ -->
+    <div class="CS_skills-panel bg-yellow dark:bg-[#2a2a4a] p-6 flex flex-col gap-4">
+      <div class="flex items-center gap-3 mb-1">
+        <div class="w-8 h-8 bg-[#512bd4] border-[2px] border-ink flex items-center justify-center
+                    shadow-[2px_2px_0_#1a1a2e]">
+          <i class="devicon-dotnetcore-plain text-white text-sm"></i>
+        </div>
+        <span class="font-bangers text-[18px] tracking-[3px] text-ink dark:text-paper">BACKEND</span>
+        <div class="CS_zigzag flex-1 h-[2px] opacity-15"></div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">.NET / ASP.NET</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 7</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-fill--purple CS_bar-animate" style="--bar-w: 70%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">C#</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 7</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-fill--purple CS_bar-animate" style="--bar-w: 70%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">SQL Server</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 6</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-fill--purple CS_bar-animate" style="--bar-w: 60%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper">REST APIs</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-comic-red">LVL 7</span>
+          </div>
+          <div class="CS_bar-track">
+            <div class="CS_bar-fill CS_bar-fill--purple CS_bar-animate" style="--bar-w: 70%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ PANEL HERRAMIENTAS + DEVOPS ══ -->
+    <div class="CS_skills-panel bg-ink dark:bg-[#0f0f20] p-6 flex flex-col gap-4">
+      <div class="flex items-center gap-3 mb-1">
+        <div class="w-8 h-8 bg-comic-red border-[2px] border-paper flex items-center justify-center
+                    shadow-[2px_2px_0_#fffbf0]">
+          <i class="devicon-git-plain text-white text-sm"></i>
+        </div>
+        <span class="font-bangers text-[18px] tracking-[3px] text-paper">TOOLS / DEVOPS</span>
+        <div class="CS_zigzag-light flex-1 h-[2px] opacity-15"></div>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-paper">Git / GitHub</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-yellow">LVL 8</span>
+          </div>
+          <div class="CS_bar-track CS_bar-track--dark">
+            <div class="CS_bar-fill CS_bar-fill--yellow CS_bar-animate" style="--bar-w: 80%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-paper">Docker</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-yellow">LVL 5</span>
+          </div>
+          <div class="CS_bar-track CS_bar-track--dark">
+            <div class="CS_bar-fill CS_bar-fill--yellow CS_bar-animate" style="--bar-w: 50%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-paper">Linux</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-yellow">LVL 5</span>
+          </div>
+          <div class="CS_bar-track CS_bar-track--dark">
+            <div class="CS_bar-fill CS_bar-fill--yellow CS_bar-animate" style="--bar-w: 50%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="CS_skill-row">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bangers text-[13px] tracking-[2px] text-paper">Figma</span>
+            <span class="font-bangers text-[11px] tracking-[1px] text-yellow">LVL 6</span>
+          </div>
+          <div class="CS_bar-track CS_bar-track--dark">
+            <div class="CS_bar-fill CS_bar-fill--yellow CS_bar-animate" style="--bar-w: 60%">
+              <div class="CS_bar-shine"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ PANEL SOFT SKILLS + IDIOMAS ══ -->
+    <div class="CS_skills-panel bg-comic-blue dark:bg-[#1a2a3a] p-6 flex flex-col gap-5">
+
+      <!-- Soft skills con pip dots -->
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="font-bangers text-[18px] tracking-[3px] text-paper">SOFT SKILLS</span>
+          <div class="CS_zigzag-light flex-1 h-[2px] opacity-20"></div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="CS_soft-row flex items-center justify-between">
+            <span class="font-bangers text-[13px] tracking-[1px] text-paper">Trabajo en equipo</span>
+            <div class="CS_pips flex gap-1">
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+            </div>
+          </div>
+          <div class="CS_soft-row flex items-center justify-between">
+            <span class="font-bangers text-[13px] tracking-[1px] text-paper">Comunicación</span>
+            <div class="CS_pips flex gap-1">
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--off"></div>
+            </div>
+          </div>
+          <div class="CS_soft-row flex items-center justify-between">
+            <span class="font-bangers text-[13px] tracking-[1px] text-paper">Aprendizaje rápido</span>
+            <div class="CS_pips flex gap-1">
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+            </div>
+          </div>
+          <div class="CS_soft-row flex items-center justify-between">
+            <span class="font-bangers text-[13px] tracking-[1px] text-paper">Resolución problemas</span>
+            <div class="CS_pips flex gap-1">
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--on"></div>
+              <div class="CS_pip CS_pip--off"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t-[2px] border-paper opacity-20"></div>
+
+      <!-- Idiomas con badges -->
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="font-bangers text-[18px] tracking-[3px] text-paper">IDIOMAS</span>
+          <div class="CS_zigzag-light flex-1 h-[2px] opacity-20"></div>
+        </div>
+        <div class="flex gap-3 flex-wrap">
+          <div class="flex flex-col items-center gap-1 bg-paper border-[2px] border-ink
+                      px-4 py-2 shadow-[3px_3px_0_#1a1a2e]">
+            <span class="text-xl">🇪🇸</span>
+            <span class="font-bangers text-[12px] tracking-[1px] text-ink leading-none">Español</span>
+            <span class="font-quattrocento text-[10px] text-ink opacity-60 leading-none">Nativo</span>
+          </div>
+          <div class="flex flex-col items-center gap-1 bg-paper border-[2px] border-ink
+                      px-4 py-2 shadow-[3px_3px_0_#1a1a2e]">
+            <span class="text-xl">🇺🇸</span>
+            <span class="font-bangers text-[12px] tracking-[1px] text-ink leading-none">Inglés</span>
+            <span class="font-quattrocento text-[10px] text-ink opacity-60 leading-none">Intermedio</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- end grid -->
+
+</section>
+
+<script>
+  // Anima las barras cuando el panel entra en viewport
+  const panels = document.querySelectorAll('.CS_skills-panel');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('CS_visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+  panels.forEach(p => observer.observe(p));
+</script> 
