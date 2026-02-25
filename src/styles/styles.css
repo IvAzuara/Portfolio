@@ -616,3 +616,197 @@
 .CS_flip-card.CS_flipped .CS_flip-inner {
   transform: rotateY(180deg);
 }
+
+/* ============================================================
+   EXPERIENCE COMPONENT — Custom Styles (CS_)
+   Projects
+   ============================================================ */
+
+/* ── Title highlight ── */
+.CS_exp-title-highlight::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: -4px;
+  right: -4px;
+  height: 14px;
+  background: var(--color-comic-blue);
+  z-index: -1;
+  transform: skewX(-3deg);
+  opacity: 0.35;
+}
+
+/* ── Timeline line cap at top ── */
+.CS_timeline-line::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--color-ink);
+  border-radius: 50%;
+}
+
+.dark .CS_timeline-line::before {
+  background: var(--color-paper);
+}
+
+/* ── Node diamond shape ── */
+.CS_node {
+  transform: rotate(45deg) translateX(calc(-50% - 1.5px - 2rem));
+  flex-shrink: 0;
+}
+
+/* Override per side */
+.CS_node-col:first-child .CS_node {
+  transform: rotate(45deg) translateX(calc(50% + 1.5px + 2rem));
+  align-self: flex-end;
+  margin-right: -10px;
+}
+
+.CS_node-col:not(:first-child) .CS_node {
+  transform: rotate(45deg) translateX(0);
+  align-self: flex-start;
+  margin-left: -10px;
+}
+
+/* ── Arrow connectors (card → line) ── */
+.CS_connector-right::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: -14px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 14px solid var(--color-ink);
+}
+
+.CS_connector-right::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid var(--color-paper);
+  z-index: 1;
+}
+
+.dark .CS_connector-right::before {
+  border-left-color: #1e1e38;
+}
+
+/* Light connector (dark card) */
+.CS_connector-right--light::before {
+  border-left-color: var(--color-ink) !important;
+}
+
+.dark .CS_connector-right--light::before {
+  border-left-color: #0d0d1a !important;
+}
+
+.CS_connector-left::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: -14px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 14px solid var(--color-ink);
+}
+
+.CS_connector-left::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 10px solid var(--color-yellow);
+  z-index: 1;
+}
+
+.dark .CS_connector-left::before {
+  border-right-color: #2a2a4a;
+}
+
+/* ── Exp tags ── */
+.CS_exp-tag {
+  font-family: 'Bangers', cursive;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 1px 8px;
+  border-width: 1.5px;
+  border-style: solid;
+  display: inline-block;
+}
+
+.CS_exp-tag--red {
+  color: var(--color-comic-red);
+  border-color: var(--color-comic-red);
+  background: rgba(230, 57, 70, 0.08);
+}
+
+.CS_exp-tag--blue {
+  color: var(--color-comic-blue);
+  border-color: var(--color-comic-blue);
+  background: rgba(69, 123, 157, 0.1);
+}
+
+.CS_exp-tag--yellow {
+  color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  background: rgba(255, 214, 10, 0.1);
+}
+
+/* ── Card entrance animation ── */
+.CS_exp-card {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.CS_exp-card.CS_visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.CS_exp-card--left.CS_visible  { transition-delay: 0.1s; }
+.CS_exp-card--right.CS_visible { transition-delay: 0.2s; }
+
+/* ── Responsive: stack single column on mobile ── */
+@media (max-width: 640px) {
+  .CS_timeline-item {
+    grid-template-columns: 1fr !important;
+  }
+
+  .CS_timeline-line {
+    left: 16px !important;
+    transform: none !important;
+  }
+
+  .CS_node-col {
+    display: none;
+  }
+
+  .CS_exp-card {
+    margin-left: 36px;
+  }
+
+  .CS_connector-right::after,
+  .CS_connector-right::before,
+  .CS_connector-left::after,
+  .CS_connector-left::before {
+    display: none;
+  }
+}

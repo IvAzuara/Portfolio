@@ -1,0 +1,250 @@
+---
+// Experience.astro
+---
+
+<section id="experiencia" class="scroll-mt-20 relative bg-paper dark:bg-ink border-b-[3px] border-ink dark:border-paper overflow-hidden py-20 px-6 md:px-16">
+
+  <!-- Halftone bg -->
+  <div class="CS_halftone absolute inset-0 pointer-events-none z-0"></div>
+
+  <!-- Section label -->
+  <div class="relative z-10 flex items-center gap-4 mb-14">
+    <span class="font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper opacity-40">05 /</span>
+    <h2 class="font-bangers text-[clamp(36px,5vw,56px)] leading-none tracking-wide text-ink dark:text-paper">
+      EXPE<span class="CS_exp-title-highlight relative inline-block">RIENCIA</span>
+    </h2>
+    <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20 dark:opacity-10"></div>
+  </div>
+
+  <!-- ── TIMELINE WRAPPER ── -->
+  <div class="relative z-10 max-w-4xl mx-auto">
+
+    <!-- Línea vertical central -->
+    <div class="CS_timeline-line absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[3px] bg-ink dark:bg-paper"></div>
+
+    <!-- ══ NODO 1 — Empresa (PROFESIONAL) — IZQUIERDA ══ -->
+    <div class="CS_timeline-item relative grid grid-cols-2 gap-8 mb-16 items-start">
+
+      <!-- Tarjeta izquierda -->
+      <div class="CS_exp-card CS_exp-card--left
+                  relative bg-paper dark:bg-[#1e1e38]
+                  border-[3px] border-ink dark:border-paper
+                  shadow-[5px_5px_0_#1a1a2e] dark:shadow-[5px_5px_0_#fffbf0]
+                  p-5 flex flex-col gap-3">
+
+        <!-- Tipo badge -->
+        <div class="absolute -top-3 left-4">
+          <span class="font-bangers text-[11px] tracking-[3px] text-white bg-comic-red
+                       border-[2px] border-ink dark:border-paper px-2 py-0.5
+                       shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+            PROFESIONAL
+          </span>
+        </div>
+
+        <!-- Header -->
+        <div class="mt-2">
+          <div class="font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-1">
+            2023 — 2024
+          </div>
+          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-ink dark:text-paper">
+            Nombre Empresa
+          </h3>
+          <div class="font-bangers text-[14px] tracking-[2px] text-comic-red mt-1">
+            Desarrollador .NET / React
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full h-[2px] bg-ink dark:bg-paper opacity-10"></div>
+
+        <!-- Descripción -->
+        <p class="font-quattrocento text-[13px] leading-relaxed text-ink dark:text-paper opacity-80">
+          Descripción de tus responsabilidades y logros en la empresa. Qué construiste, qué aprendiste, qué impacto tuvo tu trabajo.
+        </p>
+
+        <!-- Tags de logros -->
+        <div class="flex flex-wrap gap-1.5 mt-1">
+          <span class="CS_exp-tag CS_exp-tag--red">⚡ .NET</span>
+          <span class="CS_exp-tag CS_exp-tag--red">⚡ React</span>
+          <span class="CS_exp-tag CS_exp-tag--red">⚡ SQL Server</span>
+          <span class="CS_exp-tag CS_exp-tag--red">⚡ REST APIs</span>
+        </div>
+
+        <!-- Conector flecha derecha hacia la línea -->
+        <div class="CS_connector-right"></div>
+      </div>
+
+      <!-- Nodo central + fecha flotante -->
+      <div class="CS_node-col flex flex-col items-start gap-2 pt-2 pl-6">
+        <div class="CS_node bg-comic-red border-[3px] border-ink dark:border-paper
+                    w-5 h-5 shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]
+                    -translate-x-[calc(50%+1.5px+2rem)]">
+        </div>
+        <!-- Etiqueta de año al lado derecho del nodo -->
+        <div class="font-bangers text-[28px] leading-none tracking-wide text-ink dark:text-paper opacity-20
+                    -translate-x-[0px] select-none">
+          2024
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══ NODO 2 — Universidad — DERECHA ══ -->
+    <div class="CS_timeline-item relative grid grid-cols-2 gap-8 mb-16 items-start">
+
+      <!-- Espacio izquierdo vacío + nodo -->
+      <div class="CS_node-col flex flex-col items-end gap-2 pt-2 pr-6">
+        <div class="CS_node bg-comic-blue border-[3px] border-ink dark:border-paper
+                    w-5 h-5 shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]
+                    translate-x-[calc(50%+1.5px+2rem)]">
+        </div>
+        <div class="font-bangers text-[28px] leading-none tracking-wide text-ink dark:text-paper opacity-20
+                    translate-x-0 text-right select-none">
+          2023
+        </div>
+      </div>
+
+      <!-- Tarjeta derecha -->
+      <div class="CS_exp-card CS_exp-card--right
+                  relative bg-yellow dark:bg-[#2a2a4a]
+                  border-[3px] border-ink dark:border-paper
+                  shadow-[5px_5px_0_#1a1a2e] dark:shadow-[5px_5px_0_#fffbf0]
+                  p-5 flex flex-col gap-3">
+
+        <!-- Tipo badge -->
+        <div class="absolute -top-3 left-4">
+          <span class="font-bangers text-[11px] tracking-[3px] text-ink bg-yellow
+                       border-[2px] border-ink dark:border-paper px-2 py-0.5
+                       shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+            ACADÉMICO
+          </span>
+        </div>
+
+        <!-- Header -->
+        <div class="mt-2">
+          <div class="font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-1">
+            20XX — 20XX
+          </div>
+          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-ink dark:text-paper">
+            Universidad
+          </h3>
+          <div class="font-bangers text-[14px] tracking-[2px] text-comic-blue dark:text-yellow mt-1">
+            Ingeniería / Carrera
+          </div>
+        </div>
+
+        <div class="w-full h-[2px] bg-ink dark:bg-paper opacity-10"></div>
+
+        <p class="font-quattrocento text-[13px] leading-relaxed text-ink dark:text-paper opacity-80">
+          Describe tu paso por la universidad, qué estudiaste, proyectos destacados, materias relevantes o cualquier logro académico que quieras mencionar.
+        </p>
+
+        <div class="flex flex-wrap gap-1.5 mt-1">
+          <span class="CS_exp-tag CS_exp-tag--blue">📚 Ingeniería</span>
+          <span class="CS_exp-tag CS_exp-tag--blue">📚 Proyectos</span>
+        </div>
+
+        <div class="CS_connector-left"></div>
+      </div>
+
+    </div>
+
+    <!-- ══ NODO 3 — Concurso Nacional — IZQUIERDA ══ -->
+    <div class="CS_timeline-item relative grid grid-cols-2 gap-8 mb-4 items-start">
+
+      <!-- Tarjeta izquierda -->
+      <div class="CS_exp-card CS_exp-card--left
+                  relative bg-ink dark:bg-[#0d0d1a]
+                  border-[3px] border-ink dark:border-paper
+                  shadow-[5px_5px_0_#1a1a2e] dark:shadow-[5px_5px_0_#fffbf0]
+                  p-5 flex flex-col gap-3">
+
+        <!-- Tipo badge -->
+        <div class="absolute -top-3 left-4">
+          <span class="font-bangers text-[11px] tracking-[3px] text-ink bg-yellow
+                       border-[2px] border-ink px-2 py-0.5
+                       shadow-[2px_2px_0_#1a1a2e]">
+            ACADÉMICO
+          </span>
+        </div>
+
+        <!-- Starburst decorativo -->
+        <div class="absolute -top-2 -right-3 z-10">
+          <svg viewBox="0 0 60 60" class="w-12 h-12">
+            <polygon points="30,2 36,22 56,22 40,34 46,54 30,42 14,54 20,34 4,22 24,22"
+              fill="#ffd60a" stroke="#1a1a2e" stroke-width="2"/>
+          </svg>
+          <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[55%]
+                       font-bangers text-[8px] text-ink tracking-wide -rotate-12 whitespace-nowrap">
+            🏆
+          </span>
+        </div>
+
+        <!-- Header -->
+        <div class="mt-2">
+          <div class="font-bangers text-[11px] tracking-[2px] text-paper opacity-40 mb-1">
+            20XX
+          </div>
+          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-paper">
+            Concurso Nacional
+          </h3>
+          <div class="font-bangers text-[14px] tracking-[2px] text-yellow mt-1">
+            Nombre del concurso · Participante
+          </div>
+        </div>
+
+        <div class="w-full h-[2px] bg-paper opacity-10"></div>
+
+        <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-80">
+          Describe en qué consistió el concurso, qué construiste o desarrollaste para participar, y qué resultado obtuviste.
+        </p>
+
+        <div class="flex flex-wrap gap-1.5 mt-1">
+          <span class="CS_exp-tag CS_exp-tag--yellow">🏆 Concurso</span>
+          <span class="CS_exp-tag CS_exp-tag--yellow">🏆 Nacional</span>
+        </div>
+
+        <div class="CS_connector-right CS_connector-right--light"></div>
+      </div>
+
+      <!-- Nodo central -->
+      <div class="CS_node-col flex flex-col items-start gap-2 pt-2 pl-6">
+        <div class="CS_node bg-yellow border-[3px] border-ink dark:border-paper
+                    w-5 h-5 shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]
+                    -translate-x-[calc(50%+1.5px+2rem)]">
+        </div>
+        <div class="font-bangers text-[28px] leading-none tracking-wide text-ink dark:text-paper opacity-20
+                    select-none">
+          20XX
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cap final de la línea -->
+    <div class="relative flex justify-center mt-2">
+      <div class="w-4 h-4 bg-ink dark:bg-paper border-[3px] border-ink dark:border-paper
+                  shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0] rotate-45">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  // Anima las tarjetas al entrar en viewport
+  const cards = document.querySelectorAll('.CS_exp-card');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('CS_visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  cards.forEach(c => observer.observe(c));
+</script>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Amatic+SC:wght@400;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
-@import "./hero-styles.css";
+@import "./styles.css";
 
 @variant dark (&:where(.dark, .dark *)); /* 👈 esto habilita dark: por clase en v4 */
 
