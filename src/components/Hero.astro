@@ -1,0 +1,165 @@
+---
+// Hero.astro
+---
+
+<section class="CS_hero relative min-h-screen grid grid-cols-2 border-b-[3px] border-ink overflow-hidden
+                dark:border-paper">
+
+  <!-- Halftone dot background -->
+  <div class="CS_halftone absolute inset-0 pointer-events-none z-0"></div>
+
+  <!-- Panel divider diagonal -->
+  <div class="CS_panel-divider absolute top-0 bottom-0 left-1/2 w-[6px] bg-ink z-10
+              dark:bg-paper"></div>
+
+  <!-- Panel numbers -->
+  <span class="CS_panel-num absolute top-[88px] left-[80px] font-bangers text-[13px] tracking-[2px]
+               text-ink opacity-35 z-10 dark:text-paper">
+    01 / HERO
+  </span>
+  <span class="CS_panel-num absolute top-[88px] right-[60px] font-bangers text-[13px] tracking-[2px]
+               text-ink opacity-35 z-10 dark:text-paper">
+    EST. 2024
+  </span>
+
+  <!-- ───── LEFT PANEL ───── -->
+  <div class="relative z-[1] flex flex-col justify-center
+              pt-[100px] pb-[60px] pl-[80px] pr-[60px]
+              bg-paper dark:bg-ink">
+
+    <!-- Speed lines (decorative, behind text) -->
+    <div class="CS_speed-lines absolute top-1/2 -right-10 -translate-y-1/2
+                w-[280px] h-[280px] opacity-[0.06] rounded-full pointer-events-none z-0">
+    </div>
+
+    <!-- Eyebrow tag -->
+    <span class="CS_fade-up [animation-delay:0.1s]
+                 inline-flex items-center gap-2 w-fit mb-5
+                 bg-comic-red text-white border-[2.5px] border-ink
+                 font-bangers text-[15px] tracking-[3px] px-[14px] py-1
+                 shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
+                 relative z-[2]">
+      ✦ &nbsp;Portfolio &nbsp;✦
+    </span>
+
+    <!-- Main title -->
+    <h1 class="CS_fade-up [animation-delay:0.25s]
+               font-bangers leading-[0.92] tracking-wide relative z-[2]
+               text-[clamp(64px,8vw,108px)] text-ink dark:text-paper">
+      Hola,<br>
+      soy
+      <!-- Highlighted word -->
+      <span class="CS_highlight relative inline-block">Iván&nbsp;Azuara</span><br>
+      <!-- Outline text -->
+      <span class="CS_text-outline">Full Stack</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="CS_fade-up [animation-delay:0.4s]
+              font-quattrocento text-base text-ink leading-relaxed
+              mt-6 max-w-[340px] pl-[14px] border-l-4 border-ink
+              relative z-[2] dark:text-paper dark:border-paper">
+      Construyo interfaces que se sienten tan buenas como se ven.
+      Frontend · UI · Web&nbsp;Design.
+    </p>
+
+    <!-- CTA buttons -->
+    <div class="CS_fade-up [animation-delay:0.55s]
+                flex gap-4 mt-9 flex-wrap relative z-[2]">
+
+      <a href="#proyectos"
+         class="font-bangers text-xl tracking-[2px] text-ink bg-yellow
+                border-[3px] border-ink px-7 py-[10px]
+                shadow-[5px_5px_0_#1a1a2e] dark:shadow-[5px_5px_0_#fffbf0]
+                transition-all duration-[120ms]
+                hover:-translate-x-0.5 hover:-translate-y-0.5
+                hover:shadow-[7px_7px_0_#1a1a2e] dark:hover:shadow-[7px_7px_0_#fffbf0]
+                active:translate-x-[3px] active:translate-y-[3px]
+                active:shadow-[2px_2px_0_#1a1a2e]">
+        Ver proyectos
+      </a>
+
+      <a href="#contacto"
+         class="font-bangers text-xl tracking-[2px] text-paper bg-ink
+                border-[3px] border-ink px-7 py-[10px]
+                shadow-[5px_5px_0_#457b9d]
+                transition-all duration-[120ms]
+                hover:-translate-x-0.5 hover:-translate-y-0.5
+                hover:shadow-[7px_7px_0_#457b9d]
+                active:translate-x-[3px] active:translate-y-[3px]
+                active:shadow-[2px_2px_0_#457b9d]
+                dark:bg-paper dark:text-ink">
+        Contacto
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ───── RIGHT PANEL ───── -->
+  <div class="relative z-[1] flex items-center justify-center
+              pt-[100px] pb-[60px] pl-[80px] pr-[60px]
+              bg-yellow overflow-hidden dark:bg-ink">
+
+    <!-- Large bg text -->
+    <span class="absolute font-bangers text-[280px] text-ink opacity-[0.05]
+                 tracking-[-10px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                 pointer-events-none whitespace-nowrap select-none">
+      DEV
+    </span>
+
+    <!-- Avatar wrapper -->
+    <div class="CS_avatar-enter relative z-[2]">
+
+      <!-- Speech bubble -->
+      <div class="CS_speech-bubble absolute -top-8 -right-14 z-10
+                  bg-white border-[3px] border-ink
+                  font-bangers text-lg tracking-wide text-ink
+                  px-4 py-[10px] -rotate-[4deg] whitespace-nowrap
+                  shadow-[4px_4px_0_#1a1a2e]">
+        ¡Bienvenido!
+      </div>
+
+      <!-- Avatar frame -->
+      <div class="CS_avatar-frame relative w-[300px] h-[360px]
+                  border-4 border-ink bg-paper
+                  shadow-[10px_10px_0_#1a1a2e] rotate-[2deg] overflow-hidden">
+
+        <!-- Action lines -->
+        <div class="CS_action-lines absolute inset-[-20px] pointer-events-none"></div>
+
+        <!-- Placeholder silhouette — reemplaza con tu <img> -->
+        <div class="CS_avatar-placeholder w-full h-full relative overflow-hidden">
+          <div class="CS_figure-head"></div>
+          <div class="CS_figure-body"></div>
+        </div>
+
+        <!-- Corner fold -->
+        <div class="CS_corner-fold absolute bottom-0 right-0"></div>
+      </div>
+
+      <!-- POW badge -->
+      <div class="absolute -bottom-2 -left-8 z-10">
+        <svg width="90" height="90" viewBox="0 0 90 90">
+          <polygon points="45,2 56,30 86,30 63,49 72,78 45,60 18,78 27,49 4,30 34,30"
+            fill="#ffd60a" stroke="#1a1a2e" stroke-width="3"
+            style="filter: drop-shadow(3px 3px 0px #1a1a2e)"/>
+        </svg>
+        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[52%]
+                     font-bangers text-[22px] tracking-[2px] text-ink
+                     -rotate-12 whitespace-nowrap select-none">
+          WOW!
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="CS_scroll-hint absolute bottom-7 left-1/2 -translate-x-1/2 z-20
+              flex flex-col items-center gap-1.5
+              font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper">
+    <span>SCROLL</span>
+    <div class="CS_scroll-arrow"></div>
+  </div>
+
+</section>
