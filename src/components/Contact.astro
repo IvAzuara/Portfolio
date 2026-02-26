@@ -1,12 +1,11 @@
 ---
 // Contact.astro
-// Los valores vienen de variables de entorno → nunca se exponen en el repo
 const EMAILJS_PUBLIC_KEY  = import.meta.env.EMAILJS_PUBLIC_KEY;
 const EMAILJS_SERVICE_ID  = import.meta.env.EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
 ---
 
-<section id="contacto" class="scroll-mt-20 relative bg-ink dark:bg-comic-blue border-b-[3px] border-paper dark:border-ink overflow-hidden py-20 px-6 md:px-16">
+<section id="contacto" class="scroll-mt-20 relative bg-comic-blue border-b-[3px] border-paper dark:border-ink overflow-hidden py-20 px-6 md:px-16">
 
   <div class="CS_halftone-white absolute inset-0 pointer-events-none z-0 opacity-[0.04]"></div>
   <div class="CS_speed-lines absolute inset-0 pointer-events-none z-0 opacity-[0.03]"></div>
@@ -26,7 +25,7 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
               shadow-[8px_8px_0_#fffbf0] dark:shadow-[8px_8px_0_#1a1a2e]
               bg-paper dark:bg-ink">
 
-    <!-- ══ PANEL IZQUIERDO — Info + links ══ -->
+    <!-- ══ PANEL IZQUIERDO ══ -->
     <div class="relative bg-yellow dark:bg-[#2a2a4a] p-8 flex flex-col justify-between overflow-hidden">
 
       <div class="absolute -top-6 -right-6 opacity-20">
@@ -34,14 +33,11 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
           <polygon points="60,5 72,45 110,45 80,68 92,108 60,85 28,108 40,68 10,45 48,45" fill="#1a1a2e"/>
         </svg>
       </div>
-
       <span class="absolute font-bangers text-[120px] text-ink dark:text-paper opacity-[0.05]
                    tracking-[-4px] bottom-[-10px] left-2 pointer-events-none select-none leading-none">HI</span>
 
       <div class="relative z-10">
-        <div class="font-bangers text-[12px] tracking-[4px] text-ink opacity-50 mb-4" data-i18n="contacto.eyebrow">
-          ✦ DISPONIBLE AHORA
-        </div>
+        <div class="font-bangers text-[12px] tracking-[4px] text-ink opacity-50 mb-4" data-i18n="contacto.eyebrow">✦ DISPONIBLE AHORA</div>
         <h3 class="font-bangers text-[clamp(28px,4vw,42px)] leading-[1.1] tracking-wide text-ink dark:text-paper mb-4" data-i18n="contacto.headline">
           ¿Tienes un proyecto<br>en mente?
         </h3>
@@ -50,64 +46,37 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
         </p>
 
         <div class="flex flex-col gap-3">
-
           <!-- Email -->
           <a href="mailto:mi.azuara03@gmail.com"
-             class="flex items-center gap-3 border-[2.5px] border-ink dark:border-paper
-                    bg-paper dark:bg-ink px-4 py-2.5
-                    shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
-                    transition-all duration-100
-                    hover:-translate-x-0.5 hover:-translate-y-0.5
-                    hover:shadow-[5px_5px_0_#1a1a2e] dark:hover:shadow-[5px_5px_0_#fffbf0]
+             class="flex items-center gap-3 border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-ink px-4 py-2.5
+                    shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0] transition-all duration-100
+                    hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#1a1a2e] dark:hover:shadow-[5px_5px_0_#fffbf0]
                     hover:bg-yellow dark:hover:bg-yellow group">
             <div class="w-7 h-7 bg-comic-red border-[2px] border-ink flex items-center justify-center shrink-0">
               <ion-icon name="mail" class="text-white text-sm"></ion-icon>
             </div>
             <div>
               <div class="font-bangers text-[10px] tracking-[2px] text-ink dark:text-paper opacity-50 leading-none mb-0.5" data-i18n="contacto.email_label">EMAIL</div>
-              <div class="font-quattrocento text-[13px] text-ink dark:text-paper group-hover:text-ink leading-none">mi.azuara03@gmail.com</div>
+              <div class="font-quattrocento text-[13px] text-ink dark:text-paper leading-none">mi.azuara03@gmail.com</div>
             </div>
             <ion-icon name="arrow-forward" class="text-ink dark:text-paper ml-auto opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></ion-icon>
           </a>
 
-          <!-- WhatsApp -->
-          <!-- <a href="https://wa.me/521XXXXXXXXXX" target="_blank"
-             class="flex items-center gap-3 border-[2.5px] border-ink dark:border-paper
-                    bg-paper dark:bg-ink px-4 py-2.5
-                    shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
-                    transition-all duration-100
-                    hover:-translate-x-0.5 hover:-translate-y-0.5
-                    hover:shadow-[5px_5px_0_#1a1a2e] dark:hover:shadow-[5px_5px_0_#fffbf0]
-                    hover:bg-yellow dark:hover:bg-yellow group">
-            <div class="w-7 h-7 bg-[#25d366] border-[2px] border-ink flex items-center justify-center shrink-0">
-              <ion-icon name="logo-whatsapp" class="text-white text-sm"></ion-icon>
-            </div>
-            <div>
-              <div class="font-bangers text-[10px] tracking-[2px] text-ink dark:text-paper opacity-50 leading-none mb-0.5" data-i18n="contacto.whatsapp_label">WHATSAPP</div>
-              <div class="font-quattrocento text-[13px] text-ink dark:text-paper group-hover:text-ink leading-none">+52 1 XX XXXX XXXX</div>
-            </div>
-            <ion-icon name="arrow-forward" class="text-ink dark:text-paper ml-auto opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></ion-icon>
-          </a> -->
-
           <!-- GitHub -->
           <a href="https://github.com/IvAzuara" target="_blank"
-             class="flex items-center gap-3 border-[2.5px] border-ink dark:border-paper
-                    bg-paper dark:bg-ink px-4 py-2.5
-                    shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
-                    transition-all duration-100
-                    hover:-translate-x-0.5 hover:-translate-y-0.5
-                    hover:shadow-[5px_5px_0_#1a1a2e] dark:hover:shadow-[5px_5px_0_#fffbf0]
+             class="flex items-center gap-3 border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-ink px-4 py-2.5
+                    shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0] transition-all duration-100
+                    hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#1a1a2e] dark:hover:shadow-[5px_5px_0_#fffbf0]
                     hover:bg-yellow dark:hover:bg-yellow group">
             <div class="w-7 h-7 bg-ink dark:bg-paper border-[2px] border-ink dark:border-paper flex items-center justify-center shrink-0">
               <i class="devicon-github-original text-paper dark:text-ink text-sm"></i>
             </div>
             <div>
               <div class="font-bangers text-[10px] tracking-[2px] text-ink dark:text-paper opacity-50 leading-none mb-0.5">GITHUB</div>
-              <div class="font-quattrocento text-[13px] text-ink dark:text-paper group-hover:text-ink leading-none">github.com/IvAzuara</div>
+              <div class="font-quattrocento text-[13px] text-ink dark:text-paper leading-none">github.com/IvAzuara</div>
             </div>
             <ion-icon name="arrow-forward" class="text-ink dark:text-paper ml-auto opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></ion-icon>
           </a>
-
         </div>
       </div>
 
@@ -130,58 +99,47 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
         <div class="flex flex-col gap-1.5">
           <label class="font-bangers text-[11px] tracking-[3px] text-ink dark:text-paper opacity-60" data-i18n="contacto.nombre_label">NOMBRE</label>
           <input id="field-nombre" type="text" required placeholder="Tu nombre"
-                 class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper
-                        bg-paper dark:bg-ink border-[2.5px] border-ink dark:border-paper
-                        px-4 py-2.5 outline-none
+                 class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper bg-paper dark:bg-ink
+                        border-[2.5px] border-ink dark:border-paper px-4 py-2.5 outline-none
                         shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
                         focus:shadow-[4px_4px_0_#1a1a2e] dark:focus:shadow-[4px_4px_0_#fffbf0]
-                        focus:-translate-x-px focus:-translate-y-px
-                        transition-all duration-100 placeholder:opacity-30"/>
+                        focus:-translate-x-px focus:-translate-y-px transition-all duration-100 placeholder:opacity-30"/>
         </div>
 
         <div class="flex flex-col gap-1.5">
           <label class="font-bangers text-[11px] tracking-[3px] text-ink dark:text-paper opacity-60" data-i18n="contacto.email_form_label">EMAIL</label>
-          <input id="field-email" type="email" required placeholder="mi.azuara03@gmail.com"
-                 class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper
-                        bg-paper dark:bg-ink border-[2.5px] border-ink dark:border-paper
-                        px-4 py-2.5 outline-none
+          <input id="field-email" type="email" required placeholder="tu@email.com"
+                 class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper bg-paper dark:bg-ink
+                        border-[2.5px] border-ink dark:border-paper px-4 py-2.5 outline-none
                         shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
                         focus:shadow-[4px_4px_0_#1a1a2e] dark:focus:shadow-[4px_4px_0_#fffbf0]
-                        focus:-translate-x-px focus:-translate-y-px
-                        transition-all duration-100 placeholder:opacity-30"/>
+                        focus:-translate-x-px focus:-translate-y-px transition-all duration-100 placeholder:opacity-30"/>
         </div>
 
         <div class="flex flex-col gap-1.5">
           <label class="font-bangers text-[11px] tracking-[3px] text-ink dark:text-paper opacity-60" data-i18n="contacto.asunto_label">ASUNTO</label>
           <input id="field-asunto" type="text" placeholder="¿En qué puedo ayudarte?"
-                 class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper
-                        bg-paper dark:bg-ink border-[2.5px] border-ink dark:border-paper
-                        px-4 py-2.5 outline-none
+                 class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper bg-paper dark:bg-ink
+                        border-[2.5px] border-ink dark:border-paper px-4 py-2.5 outline-none
                         shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
                         focus:shadow-[4px_4px_0_#1a1a2e] dark:focus:shadow-[4px_4px_0_#fffbf0]
-                        focus:-translate-x-px focus:-translate-y-px
-                        transition-all duration-100 placeholder:opacity-30"/>
+                        focus:-translate-x-px focus:-translate-y-px transition-all duration-100 placeholder:opacity-30"/>
         </div>
 
         <div class="flex flex-col gap-1.5">
           <label class="font-bangers text-[11px] tracking-[3px] text-ink dark:text-paper opacity-60" data-i18n="contacto.mensaje_label">MENSAJE</label>
           <textarea id="field-mensaje" required rows="4" placeholder="Cuéntame más..."
-                    class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper
-                           bg-paper dark:bg-ink border-[2.5px] border-ink dark:border-paper
-                           px-4 py-2.5 outline-none resize-none
+                    class="CS_input w-full font-quattrocento text-[14px] text-ink dark:text-paper bg-paper dark:bg-ink
+                           border-[2.5px] border-ink dark:border-paper px-4 py-2.5 outline-none resize-none
                            shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]
                            focus:shadow-[4px_4px_0_#1a1a2e] dark:focus:shadow-[4px_4px_0_#fffbf0]
-                           focus:-translate-x-px focus:-translate-y-px
-                           transition-all duration-100 placeholder:opacity-30"></textarea>
+                           focus:-translate-x-px focus:-translate-y-px transition-all duration-100 placeholder:opacity-30"></textarea>
         </div>
 
         <button id="submit-btn"
-                class="font-bangers text-[18px] tracking-[3px] text-ink
-                       bg-yellow border-[3px] border-ink dark:border-paper
-                       px-6 py-3 self-start
-                       shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]
-                       transition-all duration-100
-                       hover:-translate-x-0.5 hover:-translate-y-0.5
+                class="font-bangers text-[18px] tracking-[3px] text-ink bg-yellow border-[3px] border-ink dark:border-paper
+                       px-6 py-3 self-start shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]
+                       transition-all duration-100 hover:-translate-x-0.5 hover:-translate-y-0.5
                        hover:shadow-[6px_6px_0_#1a1a2e] dark:hover:shadow-[6px_6px_0_#fffbf0]
                        active:translate-x-[2px] active:translate-y-[2px] active:shadow-none
                        disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
@@ -199,24 +157,34 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
 
   <!-- Footer strip -->
   <div class="relative z-10 max-w-5xl mx-auto mt-8 flex items-center justify-between">
-    <span class="font-bangers text-[12px] tracking-[3px] text-paper dark:text-ink opacity-30">
-      © 2026 · Iván Azuara
-    </span>
-    <span class="font-bangers text-[12px] tracking-[2px] text-paper dark:text-ink opacity-30" data-i18n="contacto.footer_made">
-      HECHO CON ☕ Y MUCHO CSS
-    </span>
+    <span class="font-bangers text-[12px] tracking-[3px] text-paper dark:text-ink opacity-30">© 2026 · Iván Azuara</span>
+    <span class="font-bangers text-[12px] tracking-[2px] text-paper dark:text-ink opacity-30" data-i18n="contacto.footer_made">HECHO CON ☕ Y MUCHO CSS</span>
   </div>
 
 </section>
 
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Inyecta las env vars como atributos data en un elemento oculto -->
+<!-- Sin scripts inline, sin window hacks, sin problemas de orden -->
+<div id="emailjs-config"
+     data-public-key={EMAILJS_PUBLIC_KEY}
+     data-service-id={EMAILJS_SERVICE_ID}
+     data-template-id={EMAILJS_TEMPLATE_ID}
+     style="display:none">
+</div>
 
-<script define:vars={{ EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID }}>
-  import { getLang } from '../i18n/i18n';
+<script>
+  import emailjs from '@emailjs/browser';
+  import { getLang } from '../i18n/index';
 
-  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  // Lee los valores desde el elemento HTML — disponibles siempre que el DOM esté listo
+  const config = document.getElementById('emailjs-config')!;
+  const PUBLIC_KEY  = config.dataset.publicKey!;
+  const SERVICE_ID  = config.dataset.serviceId!;
+  const TEMPLATE_ID = config.dataset.templateId!;
 
+  emailjs.init({ publicKey: PUBLIC_KEY });
+
+  // ── Placeholders bilingüe ──
   const placeholders = {
     es: { nombre: 'Tu nombre', asunto: '¿En qué puedo ayudarte?', mensaje: 'Cuéntame más...' },
     en: { nombre: 'Your name', asunto: 'How can I help you?',     mensaje: 'Tell me more...' }
@@ -225,9 +193,9 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
   function updatePlaceholders() {
     const lang = getLang();
     const p = placeholders[lang];
-    document.getElementById('field-nombre').placeholder  = p.nombre;
-    document.getElementById('field-asunto').placeholder  = p.asunto;
-    document.getElementById('field-mensaje').placeholder = p.mensaje;
+    (document.getElementById('field-nombre')  as HTMLInputElement).placeholder    = p.nombre;
+    (document.getElementById('field-asunto')  as HTMLInputElement).placeholder    = p.asunto;
+    (document.getElementById('field-mensaje') as HTMLTextAreaElement).placeholder = p.mensaje;
   }
 
   updatePlaceholders();
@@ -235,16 +203,17 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
     setTimeout(updatePlaceholders, 50);
   });
 
-  const btn      = document.getElementById('submit-btn');
-  const label    = document.getElementById('submit-label');
-  const feedback = document.getElementById('form-feedback');
+  // ── Envío ──
+  const btn      = document.getElementById('submit-btn')    as HTMLButtonElement;
+  const label    = document.getElementById('submit-label')  as HTMLElement;
+  const feedback = document.getElementById('form-feedback') as HTMLElement;
 
   btn.addEventListener('click', async () => {
     const lang    = getLang();
-    const nombre  = document.getElementById('field-nombre').value.trim();
-    const email   = document.getElementById('field-email').value.trim();
-    const asunto  = document.getElementById('field-asunto').value.trim();
-    const mensaje = document.getElementById('field-mensaje').value.trim();
+    const nombre  = (document.getElementById('field-nombre')  as HTMLInputElement).value.trim();
+    const email   = (document.getElementById('field-email')   as HTMLInputElement).value.trim();
+    const asunto  = (document.getElementById('field-asunto')  as HTMLInputElement).value.trim();
+    const mensaje = (document.getElementById('field-mensaje') as HTMLTextAreaElement).value.trim();
 
     if (!nombre || !email || !mensaje) {
       feedback.textContent = lang === 'es'
@@ -260,7 +229,7 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
     feedback.classList.add('hidden');
 
     try {
-      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
         from_name:  nombre,
         from_email: email,
         subject:    asunto || (lang === 'es' ? 'Mensaje desde portfolio' : 'Message from portfolio'),
@@ -268,10 +237,10 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
         reply_to:   email,
       });
 
-      document.getElementById('field-nombre').value  = '';
-      document.getElementById('field-email').value   = '';
-      document.getElementById('field-asunto').value  = '';
-      document.getElementById('field-mensaje').value = '';
+      (document.getElementById('field-nombre')  as HTMLInputElement).value    = '';
+      (document.getElementById('field-email')   as HTMLInputElement).value    = '';
+      (document.getElementById('field-asunto')  as HTMLInputElement).value    = '';
+      (document.getElementById('field-mensaje') as HTMLTextAreaElement).value = '';
 
       feedback.textContent = lang === 'es'
         ? '✓ ¡Mensaje enviado! Te responderé pronto.'
@@ -280,7 +249,7 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
       feedback.classList.remove('hidden');
       label.textContent = lang === 'es' ? 'ENVIADO ✓' : 'SENT ✓';
 
-    } catch {
+    } catch (err) {
       feedback.textContent = lang === 'es'
         ? '✗ Algo salió mal. Intenta de nuevo.'
         : '✗ Something went wrong. Try again.';
