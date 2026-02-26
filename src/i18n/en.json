@@ -88,5 +88,22 @@
   "exp.concurso_fecha": "2023",
   "exp.concurso_nombre": "National Contest",
   "exp.concurso_rol": "Innovatec 2023 · Participant",
-  "exp.concurso_desc": "Participation in the Innovatec 2023 contest with the Sabio Verde project, an initiative focused on developing a medicinal plants store, where I collaborated in designing and developing a web solution as part of the team."
+  "exp.concurso_desc": "Participation in the Innovatec 2023 contest with the Sabio Verde project, an initiative focused on developing a medicinal plants store, where I collaborated in designing and developing a web solution as part of the team.",
+  "contacto.seccion": "CON",
+  "contacto.resaltado": "TACT",
+  "contacto.eyebrow": "✦ AVAILABLE NOW",
+  "contacto.headline": "Got a project in mind?",
+  "contacto.subheadline": "I am open to new opportunities, freelance projects or just chatting about tech.",
+  "contacto.email_label": "EMAIL",
+  "contacto.whatsapp_label": "WHATSAPP",
+  "contacto.form_label": "// FORM",
+  "contacto.nombre_label": "NAME",
+  "contacto.nombre_placeholder": "Your name",
+  "contacto.email_form_label": "EMAIL",
+  "contacto.asunto_label": "SUBJECT",
+  "contacto.asunto_placeholder": "How can I help you?",
+  "contacto.mensaje_label": "MESSAGE",
+  "contacto.mensaje_placeholder": "Tell me more...",
+  "contacto.btn_enviar": "SEND →",
+  "contacto.footer_made": "MADE WITH ☕ AND A LOT OF CSS"
 }

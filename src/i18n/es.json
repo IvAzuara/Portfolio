@@ -88,5 +88,23 @@
   "exp.concurso_fecha": "2023",
   "exp.concurso_nombre": "Concurso Nacional",
   "exp.concurso_rol": "Innovatec 2023 · Participante",
-  "exp.concurso_desc": "Participación en el concurso InnovaTec con el proyecto Sabio Verde, una propuesta orientada al desarrollo de una tienda de plantas medicinales, donde colaboré en el diseño y desarrollo de una solución web como parte del equipo."
+  "exp.concurso_desc": "Participación en el concurso InnovaTec con el proyecto Sabio Verde, una propuesta orientada al desarrollo de una tienda de plantas medicinales, donde colaboré en el diseño y desarrollo de una solución web como parte del equipo.",
+
+  "contacto.seccion": "CON",
+  "contacto.resaltado": "TACTO",
+  "contacto.eyebrow": "✦ DISPONIBLE AHORA",
+  "contacto.headline": "¿Tienes un proyecto en mente?",
+  "contacto.subheadline": "Estoy abierto a nuevas oportunidades, proyectos freelance o simplemente charlar sobre tecnología.",
+  "contacto.email_label": "EMAIL",
+  "contacto.whatsapp_label": "WHATSAPP",
+  "contacto.form_label": "// FORMULARIO",
+  "contacto.nombre_label": "NOMBRE",
+  "contacto.nombre_placeholder": "Tu nombre",
+  "contacto.email_form_label": "EMAIL",
+  "contacto.asunto_label": "ASUNTO",
+  "contacto.asunto_placeholder": "¿En qué puedo ayudarte?",
+  "contacto.mensaje_label": "MENSAJE",
+  "contacto.mensaje_placeholder": "Cuéntame más...",
+  "contacto.btn_enviar": "ENVIAR →",
+  "contacto.footer_made": "HECHO CON ☕ Y MUCHO CSS"
 }

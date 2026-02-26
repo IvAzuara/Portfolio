@@ -8,7 +8,6 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -35,6 +34,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -54,28 +54,39 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: ${{ env.BUILD_PATH }}/${{ steps.detect-package-manager.outputs.lockfile }}
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
+
       - name: Build Tailwind CSS
         run: |
           npm run buildcss
         working-directory: ${{ env.BUILD_PATH }}
+
       - name: Build with Astro
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} astro build \
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
+        # ── EmailJS secrets inyectados en build time ──
+        env:
+          EMAILJS_PUBLIC_KEY:  ${{ secrets.EMAILJS_PUBLIC_KEY }}
+          EMAILJS_SERVICE_ID:  ${{ secrets.EMAILJS_SERVICE_ID }}
+          EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
