@@ -22,5 +22,5 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-src/styles/tailwind.min.css
+public/tailwind.min.css
 Ignorar.md
