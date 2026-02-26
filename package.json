@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "buildcss": "postcss src/styles/tailwind.css -o src/styles/tailwind.min.css"
+    "buildcss": "postcss src/styles/tailwind.css -o public/tailwind.min.css"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.3",
