@@ -83,9 +83,9 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
         # ── EmailJS secrets inyectados en build time ──
         env:
-          EMAILJS_PUBLIC_KEY:  ${{ secrets.EMAILJS_PUBLIC_KEY }}
-          EMAILJS_SERVICE_ID:  ${{ secrets.EMAILJS_SERVICE_ID }}
-          EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
+          PUBLIC_EMAILJS_PUBLIC_KEY:  ${{ secrets.EMAILJS_PUBLIC_KEY }}
+          PUBLIC_EMAILJS_SERVICE_ID:  ${{ secrets.EMAILJS_SERVICE_ID }}
+          PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
