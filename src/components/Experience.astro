@@ -11,7 +11,7 @@
   <div class="relative z-10 flex items-center gap-4 mb-14">
     <span class="font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper opacity-40">05 /</span>
     <h2 class="font-bangers text-[clamp(36px,5vw,56px)] leading-none tracking-wide text-ink dark:text-paper">
-      EXPE<span class="CS_exp-title-highlight relative inline-block">RIENCIA</span>
+      <span data-i18n="exp.seccion">EXPE</span><span class="CS_exp-title-highlight relative inline-block" data-i18n="exp.resaltado">RIENCIA</span>
     </h2>
     <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20 dark:opacity-10"></div>
   </div>
@@ -36,21 +36,21 @@
         <div class="absolute -top-3 left-4">
           <span class="font-bangers text-[11px] tracking-[3px] text-white bg-comic-red
                        border-[2px] border-ink dark:border-paper px-2 py-0.5
-                       shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+                       shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]" data-i18n="exp.tipo_pro">
             PROFESIONAL
           </span>
         </div>
 
         <!-- Header -->
         <div class="mt-2">
-          <div class="font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-1">
+          <div class="font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-1" data-i18n="exp.empresa_fecha">
             2023 — 2024
           </div>
-          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-ink dark:text-paper">
+          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-ink dark:text-paper" data-i18n="exp.empresa_nombre">
             Nombre Empresa
           </h3>
-          <div class="font-bangers text-[14px] tracking-[2px] text-comic-red mt-1">
-            Desarrollador .NET / React
+          <div class="font-bangers text-[14px] tracking-[2px] text-comic-red mt-1" data-i18n="exp.empresa_rol">
+            Desarrollador .NET 
           </div>
         </div>
 
@@ -58,14 +58,18 @@
         <div class="w-full h-[2px] bg-ink dark:bg-paper opacity-10"></div>
 
         <!-- Descripción -->
-        <p class="font-quattrocento text-[13px] leading-relaxed text-ink dark:text-paper opacity-80">
-          Descripción de tus responsabilidades y logros en la empresa. Qué construiste, qué aprendiste, qué impacto tuvo tu trabajo.
+        <p class="font-quattrocento text-[13px] leading-relaxed text-ink dark:text-paper opacity-80" data-i18n="exp.empresa_desc_resp">
+          Descripción 1
+        </p>
+
+        <p class="font-quattrocento text-[13px] leading-relaxed text-ink dark:text-paper opacity-80" data-i18n="exp.empresa_desc_logros">
+          Descripción 2
         </p>
 
         <!-- Tags de logros -->
         <div class="flex flex-wrap gap-1.5 mt-1">
           <span class="CS_exp-tag CS_exp-tag--red">⚡ .NET</span>
-          <span class="CS_exp-tag CS_exp-tag--red">⚡ React</span>
+          <span class="CS_exp-tag CS_exp-tag--red">⚡ Blazor</span>
           <span class="CS_exp-tag CS_exp-tag--red">⚡ SQL Server</span>
           <span class="CS_exp-tag CS_exp-tag--red">⚡ REST APIs</span>
         </div>
@@ -115,27 +119,27 @@
         <div class="absolute -top-3 left-4">
           <span class="font-bangers text-[11px] tracking-[3px] text-ink bg-yellow
                        border-[2px] border-ink dark:border-paper px-2 py-0.5
-                       shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+                       shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]" data-i18n="exp.tipo_acad">
             ACADÉMICO
           </span>
         </div>
 
         <!-- Header -->
         <div class="mt-2">
-          <div class="font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-1">
+          <div class="font-bangers text-[11px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-1" data-i18n="exp.uni_fecha">
             20XX — 20XX
           </div>
-          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-ink dark:text-paper">
+          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-ink dark:text-paper" data-i18n="exp.uni_nombre">
             Universidad
           </h3>
-          <div class="font-bangers text-[14px] tracking-[2px] text-comic-blue dark:text-yellow mt-1">
+          <div class="font-bangers text-[14px] tracking-[2px] text-comic-blue dark:text-yellow mt-1" data-i18n="exp.uni_carrera">
             Ingeniería / Carrera
           </div>
         </div>
 
         <div class="w-full h-[2px] bg-ink dark:bg-paper opacity-10"></div>
 
-        <p class="font-quattrocento text-[13px] leading-relaxed text-ink dark:text-paper opacity-80">
+        <p class="font-quattrocento text-[13px] leading-relaxed text-ink dark:text-paper opacity-80" data-i18n="exp.uni_desc">
           Describe tu paso por la universidad, qué estudiaste, proyectos destacados, materias relevantes o cualquier logro académico que quieras mencionar.
         </p>
 
@@ -163,7 +167,7 @@
         <div class="absolute -top-3 left-4">
           <span class="font-bangers text-[11px] tracking-[3px] text-ink bg-yellow
                        border-[2px] border-ink px-2 py-0.5
-                       shadow-[2px_2px_0_#1a1a2e]">
+                       shadow-[2px_2px_0_#1a1a2e]" data-i18n="exp.tipo_acad">
             ACADÉMICO
           </span>
         </div>
@@ -182,20 +186,20 @@
 
         <!-- Header -->
         <div class="mt-2">
-          <div class="font-bangers text-[11px] tracking-[2px] text-paper opacity-40 mb-1">
+          <div class="font-bangers text-[11px] tracking-[2px] text-paper opacity-40 mb-1" data-i18n="exp.concurso_fecha">
             20XX
           </div>
-          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-paper">
+          <h3 class="font-bangers text-[24px] leading-none tracking-wide text-paper" data-i18n="exp.concurso_nombre">
             Concurso Nacional
           </h3>
-          <div class="font-bangers text-[14px] tracking-[2px] text-yellow mt-1">
+          <div class="font-bangers text-[14px] tracking-[2px] text-yellow mt-1" data-i18n="exp.concurso_rol">
             Nombre del concurso · Participante
           </div>
         </div>
 
         <div class="w-full h-[2px] bg-paper opacity-10"></div>
 
-        <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-80">
+        <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-80" data-i18n="exp.concurso_desc">
           Describe en qué consistió el concurso, qué construiste o desarrollaste para participar, y qué resultado obtuviste.
         </p>
 

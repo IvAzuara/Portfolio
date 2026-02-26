@@ -11,13 +11,13 @@
   <div class="relative z-10 flex items-center gap-4 mb-10">
     <span class="font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper opacity-40">04 /</span>
     <h2 class="font-bangers text-[clamp(36px,5vw,56px)] leading-none tracking-wide text-ink dark:text-paper">
-      PRO<span class="CS_projects-title-highlight relative inline-block">YECTOS</span>
+      <span data-i18n="proyectos.seccion">PRO</span><span class="CS_projects-title-highlight relative inline-block" data-i18n="proyectos.resaltado">YECTOS</span>
     </h2>
     <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20 dark:opacity-10"></div>
   </div>
 
   <!-- hint -->
-  <p class="relative z-10 font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-8 max-w-5xl mx-auto">
+  <p class="relative z-10 font-bangers text-[13px] tracking-[2px] text-ink dark:text-paper opacity-40 mb-8 max-w-5xl mx-auto" data-i18n="proyectos.hint">
     ✦ HOVER PARA VER DETALLES
   </p>
 
@@ -44,13 +44,13 @@
                   <circle cx="60" cy="60" r="55" fill="none" stroke="#e63946" stroke-width="4"/>
                   <circle cx="60" cy="60" r="48" fill="none" stroke="#e63946" stroke-width="1.5"/>
                   <text x="60" y="52" text-anchor="middle" font-family="Bangers" font-size="13"
-                        fill="#e63946" letter-spacing="3">PROYECTO</text>
+                        fill="#e63946" letter-spacing="3" data-i18n="proyectos.card1_nda_project">PROYECTO</text>
                   <text x="60" y="82" text-anchor="middle" font-family="Bangers" font-size="18"
-                        fill="#e63946" letter-spacing="2">PRIVADO</text>
+                        fill="#e63946" letter-spacing="2" data-i18n="proyectos.card1_nda_private">PRIVADO</text>
                   <line x1="15" y1="60" x2="105" y2="60" stroke="#e63946" stroke-width="2"/>
                 </svg>
               </div>
-              <span class="font-bangers text-[11px] tracking-[3px] text-comic-red opacity-70">NDA ACTIVO</span>
+              <span class="font-bangers text-[11px] tracking-[3px] text-comic-red opacity-70" data-i18n="proyectos.card1_nda">NDA ACTIVO</span>
             </div>
             <div class="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-comic-red opacity-50"></div>
             <div class="absolute top-3 right-3 w-5 h-5 border-t-2 border-r-2 border-comic-red opacity-50"></div>
@@ -62,8 +62,8 @@
           <div class="p-4 bg-paper dark:bg-[#0d0d1a] border-t-[3px] border-comic-red">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <div class="font-bangers text-[11px] tracking-[3px] text-comic-red mb-1">EMPRESA · 2024</div>
-                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink dark:text-paper">[REDACTED]</div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-comic-red mb-1" data-i18n="proyectos.card1_tipo">EMPRESA · 2024</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink dark:text-paper" data-i18n="proyectos.card1_titulo">[REDACTED]</div>
               </div>
               <div class="w-8 h-8 border-[2px] border-comic-red flex items-center justify-center shrink-0">
                 <span class="text-lg">🔒</span>
@@ -78,21 +78,21 @@
                     border-[3px] border-ink dark:border-paper
                     shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
                     flex flex-col p-6 gap-4">
-          <div class="font-bangers text-[11px] tracking-[3px] text-white opacity-60">// DETALLES</div>
-          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-white">
-            Sistema Interno<br>Empresarial
+          <div class="font-bangers text-[11px] tracking-[3px] text-white opacity-60" data-i18n="proyectos.card1_detalle">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-white" data-i18n="proyectos.card1_nombre">
+            Titulo
           </h3>
-          <p class="font-quattrocento text-[13px] leading-relaxed text-white opacity-90 flex-1">
-            Aplicación de gestión interna desarrollada para una empresa. Incluye módulos de administración, reportes y automatización de procesos. Información detallada bajo NDA.
+          <p class="font-quattrocento text-[13px] leading-relaxed text-white opacity-90 flex-1" data-i18n="proyectos.card1_desc">
+            Descripcion
           </p>
           <div class="flex flex-wrap gap-1.5">
             <span class="CS_tech-badge-back">.NET</span>
             <span class="CS_tech-badge-back">C#</span>
             <span class="CS_tech-badge-back">SQL Server</span>
-            <span class="CS_tech-badge-back">React</span>
+            <span class="CS_tech-badge-back">Blazor</span>
           </div>
           <div class="flex gap-3 items-center pt-1 border-t-[2px] border-white/20">
-            <span class="font-bangers text-[12px] tracking-[2px] text-white opacity-50 flex items-center gap-1">
+            <span class="font-bangers text-[12px] tracking-[2px] text-white opacity-50 flex items-center gap-1" data-i18n="proyectos.card1_privado">
               🔒 Repositorio privado
             </span>
           </div>
@@ -138,8 +138,8 @@
           <div class="p-4 bg-paper dark:bg-[#1e1e38] border-t-[3px] border-ink dark:border-paper">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <div class="font-bangers text-[11px] tracking-[3px] text-comic-blue dark:text-yellow mb-1">PERSONAL · 2024</div>
-                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink dark:text-paper">Pokédex .NET</div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-comic-blue dark:text-yellow mb-1" data-i18n="proyectos.card2_tipo">PERSONAL · 2024</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink dark:text-paper" data-i18n="proyectos.card2_titulo">Pokédex .NET</div>
               </div>
               <div class="w-8 h-8 border-[2px] border-ink dark:border-paper flex items-center justify-center shrink-0
                           bg-yellow shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
@@ -155,25 +155,25 @@
                     border-[3px] border-ink dark:border-paper
                     shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
                     flex flex-col p-6 gap-4">
-          <div class="font-bangers text-[11px] tracking-[3px] text-white opacity-60">// DETALLES</div>
-          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-white">
-            Pokédex<br>con .NET
+          <div class="font-bangers text-[11px] tracking-[3px] text-white opacity-60" data-i18n="proyectos.card2_detalle">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-white" data-i18n="proyectos.card2_nombre">
+            Pokédex
           </h3>
-          <p class="font-quattrocento text-[13px] leading-relaxed text-white opacity-90 flex-1">
-            Pokédex completa construida usando .NET tanto para el frontend como para la lógica de consumo. Conecta con PokéAPI para obtener datos en tiempo real de todos los Pokémon.
+          <p class="font-quattrocento text-[13px] leading-relaxed text-white opacity-90 flex-1" data-i18n="proyectos.card2_desc">
+            Descripcion
           </p>
           <div class="flex flex-wrap gap-1.5">
             <span class="CS_tech-badge-back">.NET</span>
             <span class="CS_tech-badge-back">C#</span>
             <span class="CS_tech-badge-back">PokéAPI</span>
-            <span class="CS_tech-badge-back">Blazor</span>
+            <span class="CS_tech-badge-back">MVC</span>
           </div>
           <div class="flex gap-3 items-center pt-1 border-t-[2px] border-white/20">
             <a href="https://github.com/tu-usuario/pokedex" target="_blank"
                class="font-bangers text-[13px] tracking-[2px] text-white
                       border-[2px] border-white px-3 py-1
                       hover:bg-white hover:text-[#cc0000] transition-colors duration-100
-                      flex items-center gap-1.5">
+                      flex items-center gap-1.5" data-i18n="proyectos.github">
               <i class="devicon-github-original text-base"></i>
               GitHub →
             </a>
@@ -209,7 +209,8 @@
                   fill="#ffd60a" stroke="#fffbf0" stroke-width="2.5"/>
               </svg>
               <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[55%]
-                           font-bangers text-[11px] text-ink tracking-wide -rotate-12 whitespace-nowrap">
+                           font-bangers text-[11px] text-ink tracking-wide -rotate-12 whitespace-nowrap"
+                           data-i18n="proyectos.card3_star">
                 ESTE!
               </span>
             </div>
@@ -220,8 +221,8 @@
           <div class="p-4 bg-yellow dark:bg-[#2a2a4a] border-t-[3px] border-ink dark:border-paper">
             <div class="flex items-start justify-between gap-2">
               <div>
-                <div class="font-bangers text-[11px] tracking-[3px] text-ink dark:text-paper opacity-50 mb-1">PORTFOLIO · 2024</div>
-                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink dark:text-paper">Este Portfolio</div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-ink dark:text-paper opacity-50 mb-1" data-i18n="proyectos.card3_tipo">PORTFOLIO · 2024</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-ink dark:text-paper" data-i18n="proyectos.card3_titulo">Este Portfolio</div>
               </div>
               <div class="w-8 h-8 border-[2px] border-ink dark:border-paper flex items-center justify-center shrink-0
                           bg-paper dark:bg-ink shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
@@ -237,12 +238,12 @@
                     border-[3px] border-ink dark:border-paper
                     shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
                     flex flex-col p-6 gap-4">
-          <div class="font-bangers text-[11px] tracking-[3px] text-yellow opacity-60">// DETALLES</div>
-          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-paper">
-            Portfolio<br>Personal
+          <div class="font-bangers text-[11px] tracking-[3px] text-yellow opacity-60" data-i18n="proyectos.card3_detalle">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-paper" data-i18n="proyectos.card3_nombre">
+            Portfolio
           </h3>
-          <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-90 flex-1">
-            Este mismo portfolio que estás viendo. Diseñado con estética de cómic moderno, construido con Astro y Tailwind v4. Código público, puedes ver cómo está hecho.
+          <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-90 flex-1" data-i18n="proyectos.card3_desc">
+            Descripcion
           </p>
           <div class="flex flex-wrap gap-1.5">
             <span class="CS_tech-badge-back CS_tech-badge-back--dark">Astro</span>
@@ -254,7 +255,7 @@
                class="font-bangers text-[13px] tracking-[2px] text-yellow
                       border-[2px] border-yellow px-3 py-1
                       hover:bg-yellow hover:text-ink transition-colors duration-100
-                      flex items-center gap-1.5">
+                      flex items-center gap-1.5" data-i18n="proyectos.github">
               <i class="devicon-github-original text-base"></i>
               GitHub →
             </a>
