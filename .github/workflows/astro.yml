@@ -68,7 +68,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build Tailwind CSS
         run: |
-          ${{ steps.detect-package-manager.outputs.runner }} postcss src/styles/tailwind.css -o src/styles/tailwind.min.css
+          npm run buildcss
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
