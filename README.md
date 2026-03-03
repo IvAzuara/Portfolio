@@ -11,10 +11,10 @@
 ## 📸 Preview
 
 > _Tema Claro del portafiolio (Hero)._
-> `![Preview del portfolio](./public/HeroClear.png)`
+> ![Preview del portfolio](./public/HeroClear.png)
 
 > _Tema Oscuro del portafiolio (Hero)._
-> `![Preview del portfolio](./public/HeroDark.png)`
+> ![Preview del portfolio](./public/HeroDark.png)
 
 ---
 
