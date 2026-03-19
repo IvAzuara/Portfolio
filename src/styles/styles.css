@@ -740,6 +740,15 @@
   border-right-color: #2a2a4a;
 }
 
+/* Light connector (dark card) */
+.CS_connector-left--light::before {
+  border-right-color: var(--color-ink) !important;
+}
+
+.dark .CS_connector-left--light::before {
+  border-right-color: #0d0d1a !important;
+}
+
 /* ── Exp tags ── */
 .CS_exp-tag {
   font-family: 'Bangers', cursive;
