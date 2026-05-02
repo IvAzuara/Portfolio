@@ -24,3 +24,6 @@ pnpm-debug.log*
 .idea/
 public/tailwind.min.css
 Ignorar.md
+
+.gemini
+GEMINI.md
