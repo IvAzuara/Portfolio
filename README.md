@@ -46,7 +46,7 @@
 
 ### Requisitos
 
-- Node.js `>= 18`
+- Node.js `>= 22`
 - pnpm `>= 10`
 
 ### Instalación
