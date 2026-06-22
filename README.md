@@ -47,7 +47,7 @@
 ### Requisitos
 
 - Node.js `>= 18`
-- npm `>= 9`
+- pnpm `>= 10`
 
 ### Instalación
 
@@ -57,7 +57,7 @@ git clone https://github.com/IvAzuara/Portfolio.git
 cd Portfolio
 
 # 2. Instala dependencias
-npm install
+pnpm install
 
 # 3. Crea el archivo de variables de entorno
 cp .env.example .env
@@ -73,7 +73,7 @@ PUBLIC_EMAILJS_TEMPLATE_ID=tu_template_id
 
 ```bash
 # 4. Inicia el servidor de desarrollo
-npm run dev
+pnpm run dev
 ```
 
 Abre [http://localhost:4321](http://localhost:4321) en tu navegador.
@@ -82,9 +82,9 @@ Abre [http://localhost:4321](http://localhost:4321) en tu navegador.
 
 | Comando           | Descripción                          |
 |-------------------|--------------------------------------|
-| `npm run dev`     | Servidor de desarrollo con hot reload |
-| `npm run build`   | Build de producción en `/dist`        |
-| `npm run preview` | Vista previa del build de producción  |
+| `pnpm run dev`     | Servidor de desarrollo con hot reload |
+| `pnpm run build`   | Build de producción en `/dist`        |
+| `pnpm run preview` | Vista previa del build de producción  |
 
 ---
 
