@@ -1,5 +1,6 @@
 ---
 // Projects.astro
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <section id="proyectos" class="scroll-mt-20 relative bg-paper dark:bg-ink border-b-[3px] border-ink dark:border-paper overflow-hidden py-20 px-6 md:px-16">
@@ -341,6 +342,201 @@
                       hover:bg-yellow hover:text-ink transition-colors duration-100
                       flex items-center gap-1.5">
               Live →
+            </a>
+          </div>
+          <div class="font-bangers text-[11px] tracking-[2px] text-paper opacity-40">2026</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ CARD 5 — WebSocket NFC Demo ══ -->
+    <div class="CS_flip-card h-[420px] cursor-pointer group">
+      <div class="CS_flip-inner">
+
+        <!-- FRENTE -->
+        <div class="CS_flip-front
+                    bg-[#0b291a] dark:bg-[#05130c]
+                    border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col overflow-hidden">
+
+          <!-- Visual area -->
+          <div class="flex-1 relative bg-[#061f14] dark:bg-[#030f0a] flex items-center justify-center overflow-hidden">
+             <!-- Signal texture / radar lines -->
+             <div class="CS_scanlines absolute inset-0 pointer-events-none opacity-30"></div>
+             
+             <!-- Terminal Header -->
+             <div class="absolute top-3 left-3 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-[#00ff66] animate-pulse"></span>
+                <span class="font-bangers text-[10px] text-[#00ff66] tracking-[2px] opacity-75">SYS.NFC.ACTIVE</span>
+             </div>
+
+             <!-- Center Graphic: Scanner and Tag -->
+             <div class="relative z-10 flex flex-col items-center">
+                <svg viewBox="0 0 100 100" class="w-28 h-28 drop-shadow-[0_0_8px_rgba(0,255,102,0.5)]">
+                   <!-- Radar Rings -->
+                   <circle cx="50" cy="50" r="42" fill="none" stroke="#00ff66" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.3" class="animate-[spin_40s_linear_infinite]" />
+                   <circle cx="50" cy="50" r="32" fill="none" stroke="#00ff66" stroke-width="1" opacity="0.4" />
+                   <circle cx="50" cy="50" r="22" fill="none" stroke="#00ff66" stroke-width="2" stroke-dasharray="5,2" opacity="0.6" />
+                   
+                   <!-- Crosshairs -->
+                   <line x1="50" y1="5" x2="50" y2="95" stroke="#00ff66" stroke-width="0.5" opacity="0.2" />
+                   <line x1="5" y1="50" x2="95" y2="50" stroke="#00ff66" stroke-width="0.5" opacity="0.2" />
+                   
+                   <!-- NFC Tag Chip Shape -->
+                   <g transform="translate(32, 32)">
+                      <!-- Card base -->
+                      <rect x="0" y="0" width="36" height="36" rx="4" fill="#0b291a" stroke="#00ff66" stroke-width="3" />
+                      <!-- Chip -->
+                      <rect x="12" y="12" width="12" height="12" rx="2" fill="#00ff66" stroke="#0b291a" stroke-width="1.5" />
+                      <!-- Antennas / wireless waves -->
+                      <path d="M 6,10 A 12,12 0 0,1 30,10" stroke="#00ff66" stroke-width="1.5" fill="none" opacity="0.7" />
+                      <path d="M 9,14 A 8,8 0 0,1 27,14" stroke="#00ff66" stroke-width="1.5" fill="none" opacity="0.7" />
+                   </g>
+                </svg>
+                
+                <!-- Live Data Stream overlay -->
+                <span class="font-mono text-[9px] text-[#00ff66] opacity-80 mt-2 bg-[#030f0a] px-2 py-0.5 border border-[#00ff66]/30 rounded">
+                   UID: 04:A3:F8:9C:12:E0:B1
+                </span>
+             </div>
+
+             <!-- Terminal stats in corners -->
+             <span class="absolute bottom-3 left-3 font-mono text-[8px] text-[#00ff66] opacity-50">BAUD: 115200</span>
+             <span class="absolute bottom-3 right-3 font-mono text-[8px] text-[#00ff66] opacity-50 animate-pulse">WS//PORT: 3000</span>
+          </div>
+
+          <!-- Footer -->
+          <div class="p-4 bg-[#0b291a] dark:bg-[#05130c] border-t-[3px] border-ink dark:border-paper text-[#00ff66]">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-paper opacity-75 mb-1" data-i18n="proyectos.card5_tipo">PERSONAL · 2026</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-[#00ff66]" data-i18n="proyectos.card5_titulo">WebSocket NFC Demo</div>
+              </div>
+              <div class="w-8 h-8 border-[2px] border-ink dark:border-paper flex items-center justify-center shrink-0
+                          bg-[#00ff66] shadow-[2px_2px_0_#1a1a2e] dark:shadow-[2px_2px_0_#fffbf0]">
+                <span class="text-ink text-lg">📡</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REVERSO -->
+        <div class="CS_flip-back
+                    bg-[#0b291a] dark:bg-[#05130c]
+                    border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col p-6 gap-4">
+          <div class="font-bangers text-[11px] tracking-[3px] text-yellow opacity-60" data-i18n="proyectos.card5_detalle">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-[#00ff66]" data-i18n="proyectos.card5_nombre">
+            WebSocket NFC Demo
+          </h3>
+          <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-90 flex-1" data-i18n="proyectos.card5_desc">
+            Descripcion
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">Node.js</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">Express.js</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">WebSocket</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">Web NFC API</span>
+          </div>
+          <div class="flex gap-3 items-center pt-1 border-t-[2px] border-paper/20">
+            <a href="https://github.com/IvAzuara/WebSocket-NFC-demo" target="_blank"
+               class="font-bangers text-[13px] tracking-[2px] text-yellow
+                      border-[2px] border-yellow px-3 py-1
+                      hover:bg-yellow hover:text-ink transition-colors duration-100
+                      flex items-center gap-1.5" data-i18n="proyectos.github">
+              <i class="devicon-github-original text-base"></i>
+              GitHub →
+            </a>
+          </div>
+          <div class="font-bangers text-[11px] tracking-[2px] text-paper opacity-40">2026</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ CARD 6 — Aerion Calendar Fork ══ -->
+    <div class="CS_flip-card h-[420px] cursor-pointer group">
+      <div class="CS_flip-inner">
+
+        <!-- FRENTE -->
+        <div class="CS_flip-front
+                    bg-[#1e1b4b] dark:bg-[#0f0d30]
+                    border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col overflow-hidden">
+
+          <!-- Visual area -->
+          <div class="flex-1 relative bg-[#1e1b4b] dark:bg-[#0f0d30] flex items-center justify-center overflow-hidden">
+             <!-- Halftone dot background -->
+             <div class="CS_halftone absolute inset-0 opacity-15 pointer-events-none"></div>
+             
+             <!-- Speed lines behind logo -->
+             <div class="CS_speed-lines absolute inset-0 opacity-[0.08] pointer-events-none"></div>
+             
+             <!-- Framed logo -->
+             <div class="relative z-10 flex flex-col items-center">
+                <div class="w-32 h-32 bg-paper dark:bg-ink border-[3px] border-ink dark:border-paper
+                            shadow-[6px_6px_0_#ffd60a] dark:shadow-[6px_6px_0_#fffbf0]
+                            flex items-center justify-center p-3 relative overflow-hidden group-hover:scale-105 transition-transform duration-200">
+                   <img src={`${baseUrl}/aerion-logo.png`} alt="Aerion Logo" class="w-full h-full object-contain" />
+                </div>
+                <!-- Decorative tags -->
+                <span class="font-bangers text-[10px] text-[#ffd60a] tracking-[3px] mt-4 uppercase animate-pulse">
+                   ⚡ LIGHTWEIGHT_CLIENT
+                </span>
+             </div>
+             
+             <!-- Tech corner stamps -->
+             <div class="absolute top-3 right-3 font-bangers text-[9px] text-[#ffd60a] opacity-70">v0.3.1 (ALPHA)</div>
+             <div class="absolute bottom-3 left-3 font-bangers text-[9px] text-[#ffd60a] opacity-70">// CALDAV MODULE</div>
+          </div>
+
+          <!-- Footer -->
+          <div class="p-4 bg-[#1e1b4b] dark:bg-[#0f0d30] border-t-[3px] border-ink dark:border-paper text-paper">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="font-bangers text-[11px] tracking-[3px] text-yellow mb-1" data-i18n="proyectos.card6_tipo">FORK / OPEN SOURCE · 2026</div>
+                <div class="font-bangers text-[22px] leading-none tracking-wide text-paper" data-i18n="proyectos.card6_titulo">Aerion Fork</div>
+              </div>
+              <div class="w-8 h-8 border-[2px] border-paper flex items-center justify-center shrink-0
+                          bg-yellow shadow-[2px_2px_0_#fffbf0]">
+                <span class="text-ink text-lg">📅</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REVERSO -->
+        <div class="CS_flip-back
+                    bg-[#1e1b4b] dark:bg-[#0f0d30]
+                    border-[3px] border-ink dark:border-paper
+                    shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]
+                    flex flex-col p-6 gap-4">
+          <div class="font-bangers text-[11px] tracking-[3px] text-yellow opacity-60" data-i18n="proyectos.card6_detalle">// DETALLES</div>
+          <h3 class="font-bangers text-[28px] leading-none tracking-wide text-paper" data-i18n="proyectos.card6_nombre">
+            Aerion Calendar (Fork)
+          </h3>
+          <p class="font-quattrocento text-[13px] leading-relaxed text-paper opacity-90 flex-1" data-i18n="proyectos.card6_desc">
+            Descripcion
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">Go</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">Wails</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">CalDAV</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">SQLite</span>
+            <span class="CS_tech-badge-back CS_tech-badge-back--dark">TypeScript</span>
+          </div>
+          <div class="flex gap-3 items-center pt-1 border-t-[2px] border-paper/20">
+            <a href="https://github.com/IvAzuara/aerion" target="_blank"
+               class="font-bangers text-[13px] tracking-[2px] text-yellow
+                      border-[2px] border-yellow px-3 py-1
+                      hover:bg-yellow hover:text-ink transition-colors duration-100
+                      flex items-center gap-1.5" data-i18n="proyectos.github">
+              <i class="devicon-github-original text-base"></i>
+              GitHub →
             </a>
           </div>
           <div class="font-bangers text-[11px] tracking-[2px] text-paper opacity-40">2026</div>

@@ -1,0 +1,59 @@
+---
+// Services.astro
+---
+
+<section id="servicios" class="scroll-mt-20 relative bg-paper dark:bg-ink border-b-[3px] border-ink dark:border-paper overflow-hidden py-20 px-6 md:px-16">
+
+  <!-- Halftone bg -->
+  <div class="CS_halftone absolute inset-0 pointer-events-none z-0"></div>
+
+  <!-- Section label -->
+  <div class="relative z-10 flex items-center gap-4 mb-10">
+    <span class="font-bangers text-[13px] tracking-[3px] text-ink dark:text-paper opacity-40">04 /</span>
+    <h2 class="font-bangers text-[clamp(36px,5vw,56px)] leading-none tracking-wide text-ink dark:text-paper">
+      <span data-i18n="servicios.seccion">SERVI</span><span class="CS_services-title-highlight relative inline-block text-white px-1 bg-comic-red" data-i18n="servicios.resaltado">CIOS B2B</span>
+    </h2>
+    <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20 dark:opacity-10"></div>
+  </div>
+
+  <!-- Intro Layout for Services -->
+  <div class="relative z-10 max-w-3xl mx-auto border-[3px] border-ink dark:border-paper bg-paper dark:bg-[#1e1e38] p-6 md:p-8 shadow-[8px_8px_0_#1a1a2e] dark:shadow-[8px_8px_0_#fffbf0]">
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+      <div class="w-16 h-16 bg-yellow border-[2.5px] border-ink flex items-center justify-center shadow-[3px_3px_0_#1a1a2e] shrink-0 rotate-[-2deg]">
+        <ion-icon name="briefcase-outline" class="text-ink text-3xl"></ion-icon>
+      </div>
+      <div class="flex-1 flex flex-col gap-4 text-center md:text-left">
+        <h3 class="font-bangers text-[26px] tracking-wide text-ink dark:text-paper leading-tight" data-i18n="servicios.intro_titulo">
+          Consultoría y Soluciones B2B
+        </h3>
+        <p class="font-quattrocento text-[14px] leading-relaxed text-ink dark:text-paper opacity-80" data-i18n="servicios.intro_desc">
+          Ecosistemas móviles en Flutter, optimización de bases de datos relacionales, rescate de sistemas heredados e integraciones especializadas bajo estándares rígidos de ingeniería.
+        </p>
+        <a href={`${import.meta.env.BASE_URL}/servicios/`}
+           class="font-bangers text-lg tracking-[2px] text-ink bg-yellow
+                  border-[3px] border-ink px-6 py-2.5 mt-2 w-fit mx-auto md:mx-0
+                  shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]
+                  transition-all duration-[100ms]
+                  hover:-translate-x-0.5 hover:-translate-y-0.5
+                  hover:shadow-[6px_6px_0_#1a1a2e] dark:hover:shadow-[6px_6px_0_#fffbf0]
+                  active:translate-x-[2px] active:translate-y-[2px]
+                  active:shadow-[1px_1px_0_#1a1a2e]"
+           data-i18n="servicios.intro_btn">
+          Ver Servicios Completos →
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<style>
+  .CS_services-title-highlight {
+    transform: skewX(-6deg);
+    border: 2px solid var(--color-ink);
+    box-shadow: 3px 3px 0 var(--color-ink);
+  }
+  .CS_service-card {
+    min-height: 380px;
+  }
+</style>

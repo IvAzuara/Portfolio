@@ -1,0 +1,356 @@
+---
+// src/pages/servicios.astro
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="stylesheet" href={`${import.meta.env.BASE_URL}tailwind.min.css`} />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Consultoría & Ingeniería de Software - Iván Azuara</title>
+  </head>
+  <body class="bg-paper dark:bg-ink text-ink dark:text-paper font-quattrocento transition-colors duration-200">
+    
+    <!-- Halftone background -->
+    <div class="CS_halftone fixed inset-0 pointer-events-none z-0"></div>
+
+    <!-- Header Navigation -->
+    <header class="relative z-10 w-full max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
+      <!-- Back button -->
+      <a href={`${import.meta.env.BASE_URL}/`}
+         class="font-bangers text-base tracking-[2px] text-ink bg-yellow
+                border-[3px] border-ink px-4 py-2
+                shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]
+                transition-all duration-[100ms]
+                hover:-translate-x-0.5 hover:-translate-y-0.5
+                hover:shadow-[6px_6px_0_#1a1a2e] dark:hover:shadow-[6px_6px_0_#fffbf0]
+                active:translate-x-[2px] active:translate-y-[2px]
+                active:shadow-[2px_2px_0_#1a1a2e]"
+         data-i18n="serviciopage.back">
+        ← VOLVER AL PORTFOLIO
+      </a>
+
+      <!-- Action buttons -->
+      <div class="flex gap-3">
+        <!-- Language button -->
+        <button id="lang-btn" class="
+          w-10 h-10 flex items-center justify-center
+          border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-ink
+          shadow-[3px_3px_0px_#1a1a2e] dark:shadow-[3px_3px_0px_#fffbf0]
+          transition-all duration-150 cursor-pointer
+          hover:bg-comic-blue hover:text-white
+          hover:-translate-x-0.5 hover:-translate-y-0.5
+          hover:shadow-[5px_5px_0px_#1a1a2e] dark:hover:shadow-[5px_5px_0px_#fffbf0]
+        ">
+          <span id="lang-label" class="font-bangers text-sm tracking-widest text-ink dark:text-paper">
+            ES
+          </span>
+        </button>
+
+        <!-- Theme button -->
+        <button id="theme-btn" class="
+          w-10 h-10 flex items-center justify-center
+          border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-ink
+          shadow-[3px_3px_0px_#1a1a2e] dark:shadow-[3px_3px_0px_#fffbf0]
+          transition-all duration-150 cursor-pointer
+          hover:bg-comic-blue hover:text-white
+          hover:-translate-x-0.5 hover:-translate-y-0.5
+          hover:shadow-[5px_5px_0px_#1a1a2e] dark:hover:shadow-[5px_5px_0px_#fffbf0]
+        ">
+          <ion-icon id="theme-icon" class="text-xl text-ink dark:text-paper" name="sunny"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 flex flex-col gap-16">
+      
+      <!-- HERO AREA -->
+      <section class="text-center md:text-left flex flex-col md:flex-row items-center gap-10 border-[3px] border-ink dark:border-paper bg-paper dark:bg-[#1e1e38] p-8 md:p-12 shadow-[8px_8px_0_#1a1a2e] dark:shadow-[8px_8px_0_#fffbf0]">
+        <div class="flex-1 flex flex-col gap-4">
+          <span class="w-fit bg-comic-red text-white border-[2.5px] border-ink font-bangers text-xs tracking-[3px] px-3 py-1 shadow-[2px_2px_0_#1a1a2e] uppercase">
+            B2B CONSULTING & SOLUTIONS
+          </span>
+          <h1 class="font-bangers text-[clamp(36px,5vw,60px)] leading-[0.95] tracking-wide text-ink dark:text-paper">
+            <span data-i18n="serviciopage.title">Consultoría B2B</span>
+            <span class="CS_highlight relative inline-block text-comic-blue dark:text-yellow" data-i18n="serviciopage.resaltado"> & Ingeniería</span>
+          </h1>
+          <p class="font-quattrocento text-base lg:text-lg text-ink dark:text-paper opacity-80 leading-relaxed max-w-2xl mt-4" data-i18n="serviciopage.subheadline">
+            Ayudo a startups y empresas a construir ecosistemas móviles y backend de nivel de producción con una disciplina de código inquebrantable.
+          </p>
+        </div>
+        <div class="w-[200px] h-[200px] bg-yellow border-[3px] border-ink dark:border-paper shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0] flex items-center justify-center shrink-0 rotate-[3deg] relative overflow-hidden">
+          <div class="CS_halftone absolute inset-0 pointer-events-none opacity-20"></div>
+          <ion-icon name="rocket-outline" class="text-[90px] text-ink z-10"></ion-icon>
+        </div>
+      </section>
+
+      <!-- ENGINEERING PHILOSOPHY -->
+      <section class="flex flex-col gap-6">
+        <div class="flex items-center gap-3">
+          <h2 class="font-bangers text-[22px] tracking-[3px] text-comic-red" data-i18n="serviciopage.especialidad_titulo">
+            MI FILOSOFÍA DE INGENIERÍA
+          </h2>
+          <div class="CS_zigzag flex-1 h-[2px] opacity-15"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-[#1a2a3a] p-6 shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]">
+            <h3 class="font-bangers text-lg tracking-wide text-ink dark:text-paper mb-2" data-i18n="serviciopage.filosofia_c1_titulo">Estándares Rígidos</h3>
+            <p class="font-quattrocento text-xs leading-relaxed text-ink dark:text-paper opacity-75" data-i18n="serviciopage.filosofia_c1_desc">
+              Utilizo convenciones estrictas para que el código sea predecible y escalable.
+            </p>
+          </div>
+          <div class="border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-[#1a2a3a] p-6 shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]">
+            <h3 class="font-bangers text-lg tracking-wide text-ink dark:text-paper mb-2" data-i18n="serviciopage.filosofia_c2_titulo">Bases de Datos Fuertes</h3>
+            <p class="font-quattrocento text-xs leading-relaxed text-ink dark:text-paper opacity-75" data-i18n="serviciopage.filosofia_c2_desc">
+              Diseño y optimizo esquemas relacionales complejos en PostgreSQL y SQL Server.
+            </p>
+          </div>
+          <div class="border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-[#1a2a3a] p-6 shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]">
+            <h3 class="font-bangers text-lg tracking-wide text-ink dark:text-paper mb-2" data-i18n="serviciopage.filosofia_c3_titulo">DevOps Autónomo</h3>
+            <p class="font-quattrocento text-xs leading-relaxed text-ink dark:text-paper opacity-75" data-i18n="serviciopage.filosofia_c3_desc">
+              Configuro pipelines de CI/CD (GitHub Actions) y entornos VPS automatizados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPANDED SERVICES DETAILS -->
+      <section class="flex flex-col gap-10">
+        
+        <!-- Service 1 -->
+        <div class="flex flex-col md:flex-row gap-6 p-6 border-[3px] border-ink dark:border-paper bg-paper dark:bg-[#1e1e38] shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]">
+          <div class="w-16 h-16 bg-yellow border-[2.5px] border-ink flex items-center justify-center shadow-[3px_3px_0_#1a1a2e] shrink-0">
+            <ion-icon name="phone-portrait-outline" class="text-ink text-3xl"></ion-icon>
+          </div>
+          <div class="flex-1 flex flex-col gap-2">
+            <h3 class="font-bangers text-2xl tracking-wide text-ink dark:text-paper leading-tight" data-i18n="serviciopage.s1_det_titulo">
+              Ecosistemas Móviles Completos y APIs
+            </h3>
+            <span class="font-bangers text-xs tracking-[2px] text-comic-red uppercase" data-i18n="serviciopage.s1_det_sub">
+              Desde el código móvil hasta el servidor de producción
+            </span>
+            <p class="font-quattrocento text-[14px] leading-relaxed text-ink dark:text-paper opacity-80 mt-2" data-i18n="serviciopage.s1_det_desc">
+              Desarrollo aplicaciones robustas utilizando Flutter para garantizar un rendimiento nativo y excelente UI. Me encargo de toda la integración de APIs en C# .NET o Node.js, implementando JWT para autenticación, notificaciones push, persistencia de datos offline (SQLite) y publicación formal en tiendas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="flex flex-col md:flex-row gap-6 p-6 border-[3px] border-ink dark:border-paper bg-paper dark:bg-[#1e1e38] shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]">
+          <div class="w-16 h-16 bg-comic-blue border-[2.5px] border-ink flex items-center justify-center shadow-[3px_3px_0_#1a1a2e] shrink-0">
+            <ion-icon name="git-network-outline" class="text-white text-3xl"></ion-icon>
+          </div>
+          <div class="flex-1 flex flex-col gap-2">
+            <h3 class="font-bangers text-2xl tracking-wide text-ink dark:text-paper leading-tight" data-i18n="serviciopage.s2_det_titulo">
+              Rescate & Refactorización de Arquitectura
+            </h3>
+            <span class="font-bangers text-xs tracking-[2px] text-comic-red uppercase" data-i18n="serviciopage.s2_det_sub">
+              Limpieza y modularización de código heredado
+            </span>
+            <p class="font-quattrocento text-[14px] leading-relaxed text-ink dark:text-paper opacity-80 mt-2" data-i18n="serviciopage.s2_det_desc">
+              Si tu sistema monolítico se ha vuelto lento o imposible de actualizar, intervengo el código para estructurarlo bajo el patrón estricto de capas (Controlador ➔ Modelo ➔ Servicio ➔ Repositorio ➔ DB). Identifico cuellos de botella en la base de datos y migro servicios viejos con seguridad.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="flex flex-col md:flex-row gap-6 p-6 border-[3px] border-ink dark:border-paper bg-paper dark:bg-[#1e1e38] shadow-[6px_6px_0_#1a1a2e] dark:shadow-[6px_6px_0_#fffbf0]">
+          <div class="w-16 h-16 bg-comic-red border-[2.5px] border-ink flex items-center justify-center shadow-[3px_3px_0_#1a1a2e] shrink-0">
+            <ion-icon name="shield-checkmark-outline" class="text-white text-3xl"></ion-icon>
+          </div>
+          <div class="flex-1 flex flex-col gap-2">
+            <h3 class="font-bangers text-2xl tracking-wide text-ink dark:text-paper leading-tight" data-i18n="serviciopage.s3_det_titulo">
+              Microservicios & Integraciones de Seguridad
+            </h3>
+            <span class="font-bangers text-xs tracking-[2px] text-comic-red uppercase" data-i18n="serviciopage.s3_det_sub">
+              Funcionalidades críticas y de alto rendimiento
+            </span>
+            <p class="font-quattrocento text-[14px] leading-relaxed text-ink dark:text-paper opacity-80 mt-2" data-i18n="serviciopage.s3_det_desc">
+              Desarrollo APIs ligeras y de alta velocidad (e.g. con FastAPI o Express.js) para resolver tareas específicas de tu negocio. Cuento con experiencia en flujos de seguridad privada, incluyendo integración de biometría facial, lectores y pasarelas de pago seguras.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- HOW WE WORK / METODOLOGIA -->
+      <section class="flex flex-col gap-10">
+        <div class="flex items-center gap-3">
+          <h2 class="font-bangers text-[36px] tracking-[3px] text-ink dark:text-paper">
+            <span data-i18n="serviciopage.flow_titulo">CÓMO</span> <span class="bg-yellow border-2 border-ink text-ink font-bangers tracking-[3px] px-2 py-0.5 shadow-[3px_3px_0_#1a1a2e]" data-i18n="serviciopage.flow_resaltado">TRABAJAMOS</span>
+          </h2>
+          <div class="CS_zigzag flex-1 h-[3px] ml-2 opacity-20"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+          <!-- Item 1 -->
+          <div class="flex flex-col p-5 bg-paper dark:bg-[#1a2a3a] border-[2.5px] border-ink dark:border-paper shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]">
+            <h4 class="font-bangers text-[16px] tracking-wide text-comic-red mb-2" data-i18n="serviciopage.flow_1_titulo">1. Diagnóstico Inicial</h4>
+            <p class="font-quattrocento text-xs leading-relaxed text-ink dark:text-paper opacity-75" data-i18n="serviciopage.flow_1_desc">
+              Evaluamos el estado del código actual, infraestructura y rendimiento para proponer soluciones realistas.
+            </p>
+          </div>
+          <!-- Item 2 -->
+          <div class="flex flex-col p-5 bg-paper dark:bg-[#1a2a3a] border-[2.5px] border-ink dark:border-paper shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]">
+            <h4 class="font-bangers text-[16px] tracking-wide text-comic-red mb-2" data-i18n="serviciopage.flow_2_titulo">2. Plan de Arquitectura</h4>
+            <p class="font-quattrocento text-xs leading-relaxed text-ink dark:text-paper opacity-75" data-i18n="serviciopage.flow_2_desc">
+              Entregamos un diseño técnico (esquemas de BD y diagramas de flujo) antes de escribir la primera línea.
+            </p>
+          </div>
+          <!-- Item 3 -->
+          <div class="flex flex-col p-5 bg-paper dark:bg-[#1a2a3a] border-[2.5px] border-ink dark:border-paper shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]">
+            <h4 class="font-bangers text-[16px] tracking-wide text-comic-red mb-2" data-i18n="serviciopage.flow_3_titulo">3. Sprint & Desarrollo</h4>
+            <p class="font-quattrocento text-xs leading-relaxed text-ink dark:text-paper opacity-75" data-i18n="serviciopage.flow_3_desc">
+              Avanzamos con entregables semanales bajo convenciones limpias y pruebas automatizadas.
+            </p>
+          </div>
+          <!-- Item 4 -->
+          <div class="flex flex-col p-5 bg-paper dark:bg-[#1a2a3a] border-[2.5px] border-ink dark:border-paper shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0]">
+            <h4 class="font-bangers text-[16px] tracking-wide text-comic-red mb-2" data-i18n="serviciopage.flow_4_titulo">4. Automatización</h4>
+            <p class="font-quattrocento text-xs leading-relaxed text-ink dark:text-paper opacity-75" data-i18n="serviciopage.flow_4_desc">
+              Configuramos pipelines automáticos de CI/CD sobre servidores VPS configurados con seguridad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DUAL CALL TO ACTION -->
+      <section class="relative bg-ink dark:bg-[#101025] text-paper border-[3px] border-ink dark:border-paper p-8 md:p-12 shadow-[8px_8px_0_#457b9d] overflow-hidden text-center flex flex-col items-center gap-6">
+        <div class="CS_halftone-white absolute inset-0 pointer-events-none opacity-[0.05]"></div>
+        
+        <h2 class="font-bangers text-[28px] md:text-[38px] leading-tight tracking-wide max-w-2xl relative z-10 text-yellow" data-i18n="serviciopage.cta_titulo">
+          ¿Tienes un desafío técnico para tu startup o empresa?
+        </h2>
+        <p class="font-quattrocento text-[15px] leading-relaxed opacity-85 max-w-xl relative z-10" data-i18n="serviciopage.cta_desc">
+          Estoy disponible para consultorías específicas, desarrollo de proyectos completos llave en mano y soporte arquitectónico continuo.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-4 relative z-10">
+          <!-- Client Email Link -->
+          <a href="mailto:mi.azuara03@gmail.com?subject=Consulta%20Proyecto%20B2B"
+             class="font-bangers text-xl tracking-[2px] text-ink bg-yellow
+                    border-[3px] border-paper px-8 py-3.5
+                    shadow-[5px_5px_0_#fffbf0]
+                    transition-all duration-[100ms]
+                    hover:-translate-x-0.5 hover:-translate-y-0.5
+                    hover:shadow-[7px_7px_0_#fffbf0]
+                    active:translate-x-[2px] active:translate-y-[2px]"
+             data-i18n="serviciopage.cta_btn_email">
+            Enviar correo de proyecto
+          </a>
+
+          <!-- CV Download -->
+          <a href={`${import.meta.env.BASE_URL}CV-IvanAzuara.pdf`} download
+             class="font-bangers text-xl tracking-[2px] text-paper bg-comic-red
+                    border-[3px] border-paper px-8 py-3.5
+                    shadow-[5px_5px_0_#fffbf0]
+                    transition-all duration-[100ms]
+                    hover:-translate-x-0.5 hover:-translate-y-0.5
+                    hover:shadow-[7px_7px_0_#fffbf0]
+                    active:translate-x-[2px] active:translate-y-[2px]"
+             data-i18n="serviciopage.cta_btn_cv">
+            Descargar Currículum
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="w-full text-center py-10 opacity-40 font-bangers text-sm tracking-[2px] text-ink dark:text-paper relative z-10">
+      HECHO CON ☕ Y MUCHO RIGOR B2B
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+      import { getLang, applyLang, toggleLang } from '../i18n/index';
+
+      // ── TEMA ──
+      const themeBtn = document.getElementById('theme-btn');
+      const themeIcon = document.getElementById('theme-icon');
+      const html = document.documentElement;
+
+      if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+        themeIcon?.setAttribute('name', 'moon');
+      }
+
+      themeBtn?.addEventListener('click', () => {
+        const isDark = html.classList.toggle('dark');
+        localStorage.theme = isDark ? 'dark' : 'light';
+        themeIcon?.setAttribute('name', isDark ? 'moon' : 'sunny');
+      });
+
+      // ── IDIOMA ──
+      const langBtn = document.getElementById('lang-btn');
+      const langLabel = document.getElementById('lang-label');
+
+      const currentLang = getLang();
+      applyLang(currentLang);
+      if (langLabel) langLabel.textContent = currentLang.toUpperCase();
+
+      langBtn?.addEventListener('click', () => {
+        const next = toggleLang();
+        if (langLabel) langLabel.textContent = next.toUpperCase();
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  /* Reuse index.css tokens / styles */
+  .CS_halftone-white {
+    background-image: radial-gradient(rgba(255, 251, 240, 0.15) 1px, transparent 0);
+    background-size: 10px 10px;
+  }
+  
+  /* Titular skew */
+  .CS_highlight::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: -4px;
+    right: -4px;
+    height: 16px;
+    background: var(--color-yellow);
+    z-index: -1;
+    transform: skewX(-6deg);
+    opacity: 0.8;
+  }
+  .dark .CS_highlight::before {
+    background: var(--color-comic-blue);
+  }
+
+  /* Zigzag divider */
+  .CS_zigzag {
+    background-image: linear-gradient(135deg, var(--color-ink) 25%, transparent 25%),
+                      linear-gradient(225deg, var(--color-ink) 25%, transparent 25%),
+                      linear-gradient(45deg, var(--color-ink) 25%, transparent 25%),
+                      linear-gradient(315deg, var(--color-ink) 25%, transparent 25%);
+    background-position: 0 0, 0 0, 5px 0, 5px 0;
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+  }
+  .dark .CS_zigzag {
+    background-image: linear-gradient(135deg, var(--color-paper) 25%, transparent 25%),
+                      linear-gradient(225deg, var(--color-paper) 25%, transparent 25%),
+                      linear-gradient(45deg, var(--color-paper) 25%, transparent 25%),
+                      linear-gradient(315deg, var(--color-paper) 25%, transparent 25%);
+  }
+
+  /* Custom shadow */
+  :root {
+    --color-ink: #1a1a2e;
+    --color-paper: #fffbf0;
+    --color-yellow: #ffd60a;
+    --color-comic-blue: #0077b5;
+    --color-comic-red: #e63946;
+  }
+</style>

@@ -76,6 +76,41 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
             </div>
             <ion-icon name="arrow-forward" class="text-ink dark:text-paper ml-auto opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></ion-icon>
           </a>
+
+          <!-- Divider -->
+          <div class="h-[2px] bg-ink dark:bg-paper opacity-10 my-1"></div>
+
+          <!-- CV (Reclutadores) -->
+          <a href={`${import.meta.env.BASE_URL}/CV-IvanAzuara.pdf`} download
+             class="flex items-center gap-3 border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-ink px-4 py-2.5
+                    shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0] transition-all duration-100
+                    hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#1a1a2e] dark:hover:shadow-[5px_5px_0_#fffbf0]
+                    hover:bg-yellow dark:hover:bg-yellow group">
+            <div class="w-7 h-7 bg-comic-red border-[2px] border-ink flex items-center justify-center shrink-0">
+              <ion-icon name="document-text" class="text-white text-sm"></ion-icon>
+            </div>
+            <div>
+              <div class="font-bangers text-[10px] tracking-[2px] text-ink dark:text-paper opacity-50 leading-none mb-0.5" data-i18n="contacto.cv_label">DESCARGAR CURRÍCULUM</div>
+              <div class="font-quattrocento text-[13px] text-ink dark:text-paper leading-none">CV-IvanAzuara.pdf</div>
+            </div>
+            <ion-icon name="arrow-down" class="text-ink dark:text-paper ml-auto opacity-40 group-hover:opacity-100 group-hover:translate-y-1 transition-all"></ion-icon>
+          </a>
+
+          <!-- LinkedIn (Reclutadores) -->
+          <a href="https://www.linkedin.com/in/ivan-azuara/" target="_blank"
+             class="flex items-center gap-3 border-[2.5px] border-ink dark:border-paper bg-paper dark:bg-ink px-4 py-2.5
+                    shadow-[3px_3px_0_#1a1a2e] dark:shadow-[3px_3px_0_#fffbf0] transition-all duration-100
+                    hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_#1a1a2e] dark:hover:shadow-[5px_5px_0_#fffbf0]
+                    hover:bg-yellow dark:hover:bg-yellow group">
+            <div class="w-7 h-7 bg-[#0077b5] border-[2px] border-ink flex items-center justify-center shrink-0">
+              <ion-icon name="logo-linkedin" class="text-white text-sm"></ion-icon>
+            </div>
+            <div>
+              <div class="font-bangers text-[10px] tracking-[2px] text-ink dark:text-paper opacity-50 leading-none mb-0.5">LINKEDIN</div>
+              <div class="font-quattrocento text-[13px] text-ink dark:text-paper leading-none">linkedin.com/in/ivan-azuara</div>
+            </div>
+            <ion-icon name="open-outline" class="text-ink dark:text-paper ml-auto opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></ion-icon>
+          </a>
         </div>
       </div>
 

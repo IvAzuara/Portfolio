@@ -56,7 +56,7 @@
     <!-- Subtitle -->
     <p class="CS_fade-up [animation-delay:0.4s]
               font-quattrocento text-base text-ink leading-relaxed
-              mt-6 max-w-[340px] pl-[14px] border-l-4 border-ink
+              mt-6 max-w-[460px] pl-[14px] border-l-4 border-ink
               relative z-[2] dark:text-paper dark:border-paper" data-i18n="hero.subtitulo">
       Descripcion
     </p>
@@ -65,7 +65,8 @@
     <div class="CS_fade-up [animation-delay:0.55s]
                 flex gap-4 mt-9 flex-wrap relative z-[2]">
 
-      <a href="#proyectos"
+      <!-- Para Clientes -->
+      <a href="#contacto"
          class="font-bangers text-xl tracking-[2px] text-ink bg-yellow
                 border-[3px] border-ink px-7 py-[10px]
                 shadow-[5px_5px_0_#1a1a2e] dark:shadow-[5px_5px_0_#fffbf0]
@@ -73,26 +74,12 @@
                 hover:-translate-x-0.5 hover:-translate-y-0.5
                 hover:shadow-[7px_7px_0_#1a1a2e] dark:hover:shadow-[7px_7px_0_#fffbf0]
                 active:translate-x-[3px] active:translate-y-[3px]
-                active:shadow-[2px_2px_0_#1a1a2e]" data-i18n="hero.cta_proyectos">
-        Ver proyectos
+                active:shadow-[2px_2px_0_#1a1a2e]" data-i18n="hero.cta_clientes">
+        Hablemos de tu proyecto
       </a>
 
-      <a href="#contacto"
-         class="font-bangers text-xl tracking-[2px] text-paper bg-ink
-                border-[3px] border-ink px-7 py-[10px]
-                shadow-[5px_5px_0_#457b9d]
-                transition-all duration-[120ms]
-                hover:-translate-x-0.5 hover:-translate-y-0.5
-                hover:shadow-[7px_7px_0_#457b9d]
-                active:translate-x-[3px] active:translate-y-[3px]
-                active:shadow-[2px_2px_0_#457b9d]
-                dark:bg-paper dark:text-ink" data-i18n="hero.cta_contacto">
-        Contacto
-      </a>
-
-      <!-- Descargar CV — apunta a public/CV-IvanAzuara.pdf -->
+      <!-- Para Reclutadores - CV -->
       <a href={`${import.meta.env.BASE_URL}/CV-IvanAzuara.pdf`} download
-         download
          class="font-bangers text-xl tracking-[2px] text-white bg-comic-blue
                 border-[3px] border-ink px-7 py-[10px]
                 shadow-[5px_5px_0_#1a1a2e] dark:shadow-[5px_5px_0_#fffbf0]
@@ -104,6 +91,21 @@
                 flex items-center gap-2" data-i18n="hero.cta_cv">
         <ion-icon name="document-text-outline" class="text-[18px]"></ion-icon>
         Descargar CV
+      </a>
+
+      <!-- Para Reclutadores - LinkedIn -->
+      <a href="https://www.linkedin.com/in/mario-iván-azuara-del-angel-27b149206/" target="_blank"
+         class="font-bangers text-xl tracking-[2px] text-paper bg-ink
+                border-[3px] border-ink px-7 py-[10px]
+                shadow-[5px_5px_0_#457b9d]
+                transition-all duration-[120ms]
+                hover:-translate-x-0.5 hover:-translate-y-0.5
+                hover:shadow-[7px_7px_0_#457b9d]
+                active:translate-x-[3px] active:translate-y-[3px]
+                active:shadow-[2px_2px_0_#457b9d]
+                dark:bg-paper dark:text-ink flex items-center gap-2" data-i18n="hero.cta_linkedin">
+        <ion-icon name="logo-linkedin" class="text-[18px]"></ion-icon>
+        LinkedIn
       </a>
 
     </div>
