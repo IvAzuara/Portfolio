@@ -1,14 +1,15 @@
 ---
 // MainIndex.astro
 const baseUrl = import.meta.env.BASE_URL;
+const cleanUrl = (path: string) => `${baseUrl}/${path}`.replace(/\/+/g, '/');
 ---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
-		<link rel="stylesheet" href={`${baseUrl}tailwind.min.css`} />
+		<link rel="icon" type="image/svg+xml" href={cleanUrl('favicon.svg')} />
+		<link rel="stylesheet" href={cleanUrl('tailwind.min.css')} />
 		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Portfolio de Ivan Azuara</title>

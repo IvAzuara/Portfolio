@@ -1,5 +1,7 @@
 ---
 // src/pages/servicios.astro
+const baseUrl = import.meta.env.BASE_URL;
+const cleanUrl = (path: string) => `${baseUrl}/${path}`.replace(/\/+/g, '/');
 ---
 
 <!doctype html>
@@ -7,8 +9,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
-    <link rel="stylesheet" href={`${import.meta.env.BASE_URL}tailwind.min.css`} />
+    <link rel="icon" type="image/svg+xml" href={cleanUrl('favicon.svg')} />
+    <link rel="stylesheet" href={cleanUrl('tailwind.min.css')} />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Consultoría & Ingeniería de Software - Iván Azuara</title>
   </head>
@@ -20,7 +22,7 @@
     <!-- Header Navigation -->
     <header class="relative z-10 w-full max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
       <!-- Back button -->
-      <a href={`${import.meta.env.BASE_URL}/`}
+      <a href={cleanUrl('')}
          class="font-bangers text-base tracking-[2px] text-ink bg-yellow
                 border-[3px] border-ink px-4 py-2
                 shadow-[4px_4px_0_#1a1a2e] dark:shadow-[4px_4px_0_#fffbf0]
@@ -245,7 +247,7 @@
           </a>
 
           <!-- CV Download -->
-          <a href={`${import.meta.env.BASE_URL}CV-IvanAzuara.pdf`} download
+          <a href={cleanUrl('CV-IvanAzuara.pdf')} download
              class="font-bangers text-xl tracking-[2px] text-paper bg-comic-red
                     border-[3px] border-paper px-8 py-3.5
                     shadow-[5px_5px_0_#fffbf0]
