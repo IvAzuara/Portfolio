@@ -143,10 +143,77 @@
         <!-- Action lines -->
         <div class="CS_action-lines absolute inset-[-20px] pointer-events-none"></div>
 
-        <!-- Placeholder silhouette — reemplaza con tu <img> -->
         <div class="CS_avatar-placeholder w-full h-full relative overflow-hidden">
-          <div class="CS_figure-head"></div>
-          <div class="CS_figure-body"></div>
+          <!-- Retro Gameboy Console SVG -->
+          <svg viewBox="0 0 200 240" class="w-full h-full p-6 select-none relative z-10" xmlns="http://www.w3.org/2000/svg">
+            <!-- Console Body Shadow (Comic brutalist style) -->
+            <rect x="29" y="24" width="146" height="196" rx="12" ry="12" fill="#1a1a2e" />
+
+            <!-- Console Body -->
+            <rect x="25" y="20" width="146" height="196" rx="12" ry="12" fill="#e2e8f0" stroke="#1a1a2e" stroke-width="5" class="console-body transition-colors duration-300" />
+            
+            <!-- Screen background / bezel -->
+            <rect x="38" y="32" width="120" height="88" rx="6" ry="6" fill="#7a8a99" stroke="#1a1a2e" stroke-width="5" />
+            
+            <!-- Screen (Default: Green retro) -->
+            <g class="screen-default">
+              <rect x="46" y="40" width="104" height="72" fill="#8bac0f" stroke="#1a1a2e" stroke-width="4" />
+              <!-- Pixel Art grid pattern -->
+              <path d="M46 40h104v72H46z" fill="url(#pixel-grid)" opacity="0.15" />
+              
+              <!-- Retro character / invader -->
+              <path d="M92 50h16v6h-16zm-6 6h28v6H86zm-6 6h40v6H80zm-6 6h52v6H74zm12 6h8v6h-8zm20 0h8v6h-8z" fill="#0f380f" />
+              
+              <text x="98" y="102" font-family="'Bangers', cursive, sans-serif" font-size="13" fill="#0f380f" text-anchor="middle" letter-spacing="1" class="animate-pulse">START</text>
+            </g>
+
+            <!-- Screen (Hover: Active Teal) -->
+            <g class="screen-hover">
+              <rect x="46" y="40" width="104" height="72" fill="#2a9d8f" stroke="#1a1a2e" stroke-width="4" />
+              
+              <!-- Heart pixel art -->
+              <path d="M92 50h4v6h-4zm12 0h4v6h-4zm-16 6h28v6H88zm0 6h28v6H88zm4 6h20v6H92zm4 6h12v6H96zm4 6h4v6h-4z" fill="#e63946" stroke="#1a1a2e" stroke-width="1" />
+              
+              <text x="98" y="102" font-family="'Bangers', cursive, sans-serif" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">LET'S GO!</text>
+            </g>
+
+            <!-- D-pad -->
+            <g class="dpad">
+              <rect x="45" y="148" width="36" height="12" rx="2" ry="2" fill="#1a1a2e" />
+              <rect x="57" y="136" width="12" height="36" rx="2" ry="2" fill="#1a1a2e" />
+              <circle cx="63" cy="154" r="3" fill="#e2e8f0" />
+            </g>
+
+            <!-- A/B buttons -->
+            <g>
+              <!-- Labels -->
+              <text x="122" y="180" font-family="monospace" font-weight="bold" font-size="8" fill="#1a1a2e">B</text>
+              <text x="147" y="168" font-family="monospace" font-weight="bold" font-size="8" fill="#1a1a2e">A</text>
+              
+              <!-- Buttons -->
+              <circle cx="122" cy="160" r="10" fill="#e63946" stroke="#1a1a2e" stroke-width="4" class="btn-b" />
+              <circle cx="147" cy="148" r="10" fill="#ffd60a" stroke="#1a1a2e" stroke-width="4" class="btn-a" />
+            </g>
+
+            <!-- Start / Select buttons -->
+            <g>
+              <rect x="75" y="195" width="20" height="6" rx="2" ry="2" fill="#7a8a99" stroke="#1a1a2e" stroke-width="2" transform="rotate(-20 85 198)" />
+              <rect x="105" y="195" width="20" height="6" rx="2" ry="2" fill="#7a8a99" stroke="#1a1a2e" stroke-width="2" transform="rotate(-20 115 198)" />
+            </g>
+
+            <!-- Speaker grilles -->
+            <line x1="135" y1="205" x2="145" y2="195" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round" />
+            <line x1="142" y1="205" x2="152" y2="195" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round" />
+            <line x1="149" y1="205" x2="159" y2="195" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round" />
+
+            <!-- Pattern definition -->
+            <defs>
+              <pattern id="pixel-grid" width="4" height="4" patternUnits="userSpaceOnUse">
+                <rect width="4" height="4" fill="none" />
+                <path d="M 4 0 L 0 0 0 4" fill="none" stroke="#000" stroke-width="0.5" />
+              </pattern>
+            </defs>
+          </svg>
         </div>
 
         <!-- Corner fold -->
@@ -177,5 +244,47 @@
     <span>SCROLL</span>
     <div class="CS_scroll-arrow"></div>
   </div>
+
+  <style>
+    /* Interactivity for Gameboy SVG */
+    .btn-a, .btn-b, .dpad {
+      transform-box: fill-box;
+      transform-origin: center;
+      transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), fill 0.15s ease;
+    }
+    .screen-hover {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+    .screen-default {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+    .console-body {
+      transition: fill 0.3s ease;
+    }
+
+    /* When the avatar frame is hovered */
+    .CS_avatar-frame:hover .btn-a {
+      transform: scale(0.85) translate(1px, 2px);
+      fill: #ffcdb2;
+    }
+    .CS_avatar-frame:hover .btn-b {
+      transform: scale(0.85) translate(-1px, 2px);
+      fill: #e07a5f;
+    }
+    .CS_avatar-frame:hover .dpad {
+      transform: rotate(6deg) scale(0.95);
+    }
+    .CS_avatar-frame:hover .screen-default {
+      opacity: 0;
+    }
+    .CS_avatar-frame:hover .screen-hover {
+      opacity: 1;
+    }
+    .CS_avatar-frame:hover .console-body {
+      fill: #fdf0d5;
+    }
+  </style>
 
 </section>
